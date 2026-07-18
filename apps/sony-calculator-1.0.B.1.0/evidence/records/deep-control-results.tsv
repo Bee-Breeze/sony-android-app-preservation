@@ -1,0 +1,34 @@
+case_id	controls	expected	formula	result	status	notes
+digit_0	digit_0	0	0		passed	digit key
+digit_1	digit_1	1	1		passed	digit key
+digit_2	digit_2	2	2		passed	digit key
+digit_3	digit_3	3	3		passed	digit key
+digit_4	digit_4	4	4		passed	digit key
+digit_5	digit_5	5	5		passed	digit key
+digit_6	digit_6	6	6		passed	digit key
+digit_7	digit_7	7	7		passed	digit key
+digit_8	digit_8	8	8		passed	digit key
+digit_9	digit_9	9	9		passed	digit key
+decimal	digit_1,dec_point,digit_5	1.5	1.5		passed	decimal point
+add	digit_2,op_add,digit_3,eq	5		5	passed	addition and equals
+subtract	digit_7,op_sub,digit_2,eq	5		5	passed	subtraction
+multiply	digit_6,op_mul,digit_7,eq	42		42	passed	multiplication
+divide	digit_8,op_div,digit_2,eq	4		4	passed	division
+percent	digit_5,digit_0,op_pct	0.5	50%	0.5	passed	percent
+sin	fun_sin,digit_0,rparen	0	sin(0)	0	passed	sine
+cos	fun_cos,digit_0,rparen	1	cos(0)	1	passed	cosine
+tan	fun_tan,digit_0,rparen	0	tan(0)	0	passed	tangent
+ln	fun_ln,digit_1,rparen	0	ln(1)	0	passed	natural logarithm
+log	fun_log,digit_1,digit_0,digit_0,rparen	2	log(100)	2	passed	base-10 logarithm
+factorial	digit_5,op_fact	120	5!	120	passed	factorial
+power	digit_2,op_pow,digit_3,eq	8		8	passed	power
+pi	const_pi	3.141592653	π	3.141592653	passed	pi constant
+e	const_e	2.718281828	e	2.718281828	passed	Euler constant
+parentheses	lparen,digit_2,op_add,digit_3,rparen,op_mul,digit_4,eq	20		20	passed	parentheses
+sqrt	op_sqrt,digit_9	3	√9	3	passed	square root
+delete_short	digit_1,digit_2,del	1	1		passed	short delete
+delete_long_clear	del(long)	empty			passed	long press clear
+toggle_mode	toggle_mode,toggle_mode	mode changes and restores		RAD->DEG->RAD	passed	angle/radian mode
+toggle_inverse	toggle_inv,toggle_inv	function labels change and restore		sin->->sin	passed	inverse functions
+divide_by_zero	digit_1,op_div,digit_0,eq	non-crashing error state	1÷0	除數不得為零	passed	error handling
+resume_after_home	home,resume	activity resumes	1÷0	除數不得為零	passed	lifecycle

@@ -1,0 +1,9 @@
+{
+  "serial_label": "sony-test-device",
+  "package": "com.sonymobile.exactcalculator",
+  "cases": 33,
+  "passed": 33,
+  "failed": 0,
+  "fatal_or_anr_lines": 0,
+  "decision": "deep-tested"
+}

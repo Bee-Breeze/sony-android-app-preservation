@@ -1,6 +1,6 @@
 a80cce7480135fc127122dea5dca009e1391d93652e1e3b68e36a49223ba9c96  ./.gitignore
 129c1d8bb5c5b461cd2ea646387c2640ef818630369b47f25d9419adf1c61179  ./LICENSE
-42fe932337d8b0e31959f71d52e73659d3e3f23a6bbc5419f1026996ca78c541  ./README.md
+ecd1484b8fb558cd886f72ddb5b1ede2e70a1661810fa1989919089d7491d2d1  ./README.md
 f28ce11ffc33c68615276a2221d83910e78b69ae852b67ac8c9846c71d270f47  ./apps/calculator-8.0.0/README.md
 8d97f095f5a2d95052e5225bad33b6c1945a390b1fce08df33e62c3fca3272ac  ./apps/calculator-8.0.0/evidence/records/accessibility-summary.txt
 ab68dfb12a687722183255846317fcacf39a8b03478e3a758b2e20ea3b6501dd  ./apps/calculator-8.0.0/evidence/records/deep-control-ledger.tsv
@@ -17,3 +17,12 @@ a6f4297e5d577b2c65f0944725a2a633eeec924b013f79c4805328c530e188dc  ./apps/calcula
 83e44080e9894f5fe4a834a114ba773e0b89a5272ba58ae8f938d85f47fa1937  ./apps/calculator-8.0.0/patches/calculator-8.0.0-portable-api23-context.patch
 d50a09f6bd415ec9a96f03ad69dcfcece49cadb8ded7b7fdbd89957b56f8dadd  ./apps/calculator-8.0.0/scripts/build-and-sign.sh
 8e6348792bceec6d2f556601d7661f5916f1770cbbe3e1d97b07716c257608cf  ./apps/calculator-8.0.0/scripts/verify-input.sh
+8810dcbbcbed7063f6822042c54fb7088e9f82c220740b2ffe85ef9e4d7925eb  ./apps/sony-calculator-1.0.B.1.0/README.md
+700dd515177a3f859e03e8c4559d4a398ddb9971340b8ea02f9492415dfafccf  ./apps/sony-calculator-1.0.B.1.0/evidence/records/deep-control-results.tsv
+242905d42fb2f6f0c08864fc6dce4a41f058a27a39822e56c3b49c1a45b337a0  ./apps/sony-calculator-1.0.B.1.0/evidence/records/deep-control-summary.json
+b1e33b20f2c299fbf3f57d927ca3494ddaf74545b954fc9547e44fb7b9bc61fe  ./apps/sony-calculator-1.0.B.1.0/evidence/records/publication-privacy-review.md
+d6ae51da8da896ef28187d1ac12ca6ffd356f0cb6ae87dbba4bcae0733a681e6  ./apps/sony-calculator-1.0.B.1.0/evidence/records/technical-test-summary.md
+bfbb530afaeddc01a7428fee8380a17374d6145ddf83871665224f50a2131a0f  ./apps/sony-calculator-1.0.B.1.0/evidence/screenshots/htc-android6-landscape.png
+4ed469f65a83db926ee02548412bb07d0454bf4dc5017443378474e9c0973346  ./apps/sony-calculator-1.0.B.1.0/evidence/screenshots/htc-android6-portrait.png
+cc24f6070f6202cbda42a717e5bb7434263d96fbcb1e29d7155d1414d4303efe  ./apps/sony-calculator-1.0.B.1.0/evidence/screenshots/sony-android13-landscape.png
+934d3f74cdc775b855cd88fc94d864e20a52daac3117b0055e0700f8b80e6bc8  ./apps/sony-calculator-1.0.B.1.0/evidence/screenshots/sony-android13-portrait.png
