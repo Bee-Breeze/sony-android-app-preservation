@@ -1,0 +1,11 @@
+field	value
+device	HTC One M8
+os	Android 6.0.1 / API 23
+artifact_sha256	ab092774e54ca9527fe7bff03ed6fc8bd478292252240273899446d664462eb7
+ordinary_install	passed
+installed_pull_hash	matched
+style_portrait_host	absent
+runtime	failed_dependency
+normalized_result	htc_tested_failed_dependency
+root_used	no
+cleanup	add-on absent; rotation restored

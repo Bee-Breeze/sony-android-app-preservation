@@ -1,0 +1,11 @@
+--- 1930s-1.0.1-original/AndroidManifest.xml
++++ 1930s-1.0.1-portable/AndroidManifest.xml
+@@
+-    <uses-library android:name="com.sony.device" android:required="true" />
++    <uses-library android:name="com.sony.device" android:required="false" />
+
+--- style-portrait-30.0.A.0.1-original/AndroidManifest.xml.binary-attribute
++++ style-portrait-30.0.A.0.1-maxaspect/AndroidManifest.xml.binary-attribute
+@@ application
+-    resource-id=0x010104f6 android:resizeableActivity type=boolean value=false
++    resource-id=0x01010560 android:maxAspectRatio type=float value=3.0
