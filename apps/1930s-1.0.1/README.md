@@ -64,6 +64,9 @@ portrait `30.0.A.0.1`。
 - 直接改成 resizable 雖填滿畫面，collection 內容卻變黑，故已淘汰。
 - 最終方案保持 non-resizable，只將 binary manifest 的該 attribute slot
   精準改寫為 `android:maxAspectRatio="3.0"`。
+- v3 雖可安裝與執行，但 Stage 9 還原驗證發現其 ZIP extra field 結構損壞，
+  因此已拒絕並淘汰。v4 改由原始 APK 逐 entry 乾淨重建，清除所有 local 與
+  central extra fields；`unzip -t`、CRC、zipalign 與簽章驗證均通過。
 - 最終 host 除 `AndroidManifest.xml` 外，1,899 個非簽章 logical entries
   均與修補前基底一致。
 
@@ -128,11 +131,13 @@ script 的逐 entry 重建驗證見
 | Original Sony certificate | SHA-256 `bc01a8cd9e5d87854f6dc4c84aed49edc34ac196c00b89623cea6ccbbdea627b` |
 | 1930's portable v1 exact tested APK | `ab092774e54ca9527fe7bff03ed6fc8bd478292252240273899446d664462eb7` |
 | Style portrait original `30.0.A.0.1` input | `0f844f1cbc37154370642fab3398b74a2804003dd2825953a3ce0919d53d8c5f` |
-| Style portrait max-aspect v3 exact tested APK | `70ed69008f644bfe3934e7a2275217e5abfdad2dd49166bdcd808e75f8261d30` |
+| Style portrait max-aspect v4 clean-ZIP exact tested APK | `d910876ad0dfa484aa2907bd58520491f7bba7df04532a1436d19a1b169c7913` |
 | Final local test certificate | SHA-256 `b5e26a13f091dd593e8f8024e7de21cc0426d0d383feae3300035b84def9d618` |
 
-最終 APK 驗證為 v2/v3 簽章有效。公開 build script 重現已測的邏輯修補；ZIP
-時間戳、apktool 版本及使用者簽章不同時，輸出整檔 SHA-256 預期會不同。
+最終 APK 驗證為 v2/v3 簽章有效，且通過 `unzip -t`、CRC 與
+`zipalign -c -p 4`。公開 build script 以乾淨 ZIP 重建方式重現已測的邏輯
+修補；ZIP 時間戳、apktool 版本及使用者簽章不同時，輸出整檔 SHA-256 預期
+會不同。
 
 ## Installation and rollback
 

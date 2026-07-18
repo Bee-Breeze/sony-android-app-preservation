@@ -10,8 +10,11 @@ The public `scripts/build-and-sign.sh` was executed on 2026-07-19 with:
 - A disposable output directory and the same local test signer used by the exact
   device-tested artifacts
 
-Both outputs passed `apksigner verify` with v2/v3 signatures. Comparison by ZIP
-entry name and uncompressed-entry SHA-256, excluding signature metadata, showed:
+Both outputs passed `apksigner verify` with v2/v3 signatures, `unzip -t`,
+CRC verification and `zipalign -c -p 4`. The host is rebuilt entry by entry
+from the exact Sony input, with signature entries removed and all malformed or
+signer-generated local/central ZIP extra fields cleared. Comparison by ZIP entry
+name and uncompressed-entry SHA-256, excluding signature metadata, showed:
 
 | Artifact | Public rebuild entries | Exact tested entries | Added | Removed | Changed |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -28,3 +31,9 @@ The public rebuild's whole-file hashes differ from the exact tested APK hashes
 because ZIP metadata and APK signing are not bit-for-bit reproducible across
 build times. Logical payload equality proves the public procedure reconstructs
 the tested patch, not the user's private signing identity.
+
+An earlier v3 host used in-place `zip -d` / `zip` replacement. It remained
+installable on Android but failed Stage 9 independent restore validation because
+`unzip -t` found a malformed extra-field length on
+`lib/armeabi-v7a/libDefocus.so`. That candidate is rejected. The exact v4 host
+documented here uses the clean rebuild path and passed the independent ZIP gate.

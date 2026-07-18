@@ -2,7 +2,7 @@
 
 - Decision: `accepted_sony_only`
 - Exact add-on SHA-256: `ab092774e54ca9527fe7bff03ed6fc8bd478292252240273899446d664462eb7`
-- Exact host SHA-256: `70ed69008f644bfe3934e7a2275217e5abfdad2dd49166bdcd808e75f8261d30`
+- Exact host SHA-256: `d910876ad0dfa484aa2907bd58520491f7bba7df04532a1436d19a1b169c7913`
 - Sony: Android 13/API 33; ordinary install and runtime; Root/Magisk not used.
 - Genuine host: Style portrait collection manager `30.0.A.0.1`.
 - Visual: host root 1096 x 2434; no compatibility bottom band, clipping, overlap,
@@ -10,7 +10,7 @@
 - Action: remove `1930年代` from favorites `(9/13 -> 8/13)`, then restore it
   by selecting the collection tile `(8/13 -> 9/13)`.
 - Lifecycle: Home/resume, back/reopen and force-stop/cold-reopen retained state.
-- Startup: latest measured clean-log cold launch 235 ms; resumed and stable.
+- Startup: latest measured clean-log cold launch 236 ms; resumed and stable.
 - Logs: no attributable fatal exception, ANR, verification, linkage, resource,
   security, or native crash.
 - Orientation: actual display rotation remained 0 even under a landscape request;
@@ -21,3 +21,6 @@
   pulled and matched its expected SHA-256.
 - HTC: exact add-on installed and pull-back hash matched; runtime failed because
   HTC lacks the genuine Style portrait host. Root was not used and cleanup passed.
+- Packaging: v4 passed `unzip -t`, CRC, zipalign and v2/v3 signature checks.
+  Rejected v3 failed independent restore testing due to a malformed ZIP extra
+  field and is not a final candidate.

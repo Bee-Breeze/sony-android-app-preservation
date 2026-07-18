@@ -20,7 +20,7 @@ apktool_bin="${APKTOOL:-apktool}"
 zipalign_bin="${ZIPALIGN:-zipalign}"
 apksigner_bin="${APKSIGNER:-apksigner}"
 
-for command_path in python3 "$apktool_bin" "$zipalign_bin" "$apksigner_bin" unzip zip shasum; do
+for command_path in python3 "$apktool_bin" "$zipalign_bin" "$apksigner_bin" unzip shasum; do
   command -v "$command_path" >/dev/null || {
     printf 'Required command not found: %s\n' "$command_path" >&2
     exit 1
@@ -55,9 +55,10 @@ python3 "$app_dir/tools/rewrite_binary_axml_attribute.py" \
   --element application --attribute resizeableActivity \
   --from-resource-id 0x010104f6 --from-type boolean --from-value false \
   --to-resource-id 0x01010560 --to-type float --to-value 3.0
-cp "$host" "$work_dir/host-unsigned.apk"
-zip -q -d "$work_dir/host-unsigned.apk" 'META-INF/*' AndroidManifest.xml
-(cd "$work_dir" && zip -q -D -X host-unsigned.apk AndroidManifest.xml)
+python3 "$app_dir/tools/rebuild_zip_with_replacement.py" \
+  "$host" "$work_dir/host-unsigned.apk" \
+  --replace AndroidManifest.xml --with-file "$work_dir/AndroidManifest.xml"
+unzip -t "$work_dir/host-unsigned.apk"
 "$zipalign_bin" -f -p 4 "$work_dir/host-unsigned.apk" "$work_dir/host-aligned.apk"
 "$apksigner_bin" sign \
   --ks "$keystore" --ks-key-alias "$alias_name" \
@@ -66,4 +67,8 @@ zip -q -d "$work_dir/host-unsigned.apk" 'META-INF/*' AndroidManifest.xml
 
 "$apksigner_bin" verify --verbose --print-certs "$out/1930s-1.0.1-portable.apk"
 "$apksigner_bin" verify --verbose --print-certs "$out/style-portrait-30.0.A.0.1-maxaspect.apk"
+"$zipalign_bin" -c -p -v 4 "$out/1930s-1.0.1-portable.apk"
+"$zipalign_bin" -c -p -v 4 "$out/style-portrait-30.0.A.0.1-maxaspect.apk"
+unzip -t "$out/1930s-1.0.1-portable.apk"
+unzip -t "$out/style-portrait-30.0.A.0.1-maxaspect.apk"
 shasum -a 256 "$out"/*.apk
