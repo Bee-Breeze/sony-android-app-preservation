@@ -1,0 +1,5 @@
+uses_permission_count=0
+internet_permission_count=0
+allow_backup=false
+native_libraries=0
+declared_components=2

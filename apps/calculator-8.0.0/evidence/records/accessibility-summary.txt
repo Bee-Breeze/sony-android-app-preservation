@@ -1,0 +1,37 @@
+clickable_count=33
+unlabeled_clickable_count=0
+all_enabled=true
+all_focusable=true
+overflow	更多選項	true	true
+toggle_inv	INV	true	true
+toggle_mode	DEG	true	true
+fun_sin	sin	true	true
+fun_cos	cos	true	true
+fun_tan	tan	true	true
+op_pct	%	true	true
+fun_ln	ln	true	true
+fun_log	log	true	true
+op_fact	!	true	true
+op_pow	^	true	true
+const_pi	π	true	true
+const_e	e	true	true
+lparen	(	true	true
+rparen	)	true	true
+op_sqrt	√	true	true
+digit_7	7	true	true
+digit_8	8	true	true
+digit_9	9	true	true
+digit_4	4	true	true
+digit_5	5	true	true
+digit_6	6	true	true
+digit_1	1	true	true
+digit_2	2	true	true
+digit_3	3	true	true
+dec_point	.	true	true
+digit_0	0	true	true
+op_div	÷	true	true
+del	DEL	true	true
+op_mul	×	true	true
+op_sub	−	true	true
+op_add	+	true	true
+eq	=	true	true

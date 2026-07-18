@@ -1,0 +1,54 @@
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.calculator2" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.calculator2.preserved8" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+     <application android:allowBackup="false" android:icon="@mipmap/ic_launcher_calculator" android:label="@string/app_name" android:supportsRtl="true">
+-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".Calculator" android:theme="@style/Theme.Calculator">
++        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.android.calculator2.Calculator" android:theme="@style/Theme.Calculator">
+             <layout android:minHeight="220.0dp" android:minWidth="230.0dp"/>
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+@@ -9,6 +9,6 @@
+                 <category android:name="android.intent.category.APP_CALCULATOR"/>
+             </intent-filter>
+         </activity>
+-        <activity android:launchMode="singleTop" android:name=".Licenses" android:parentActivityName=".Calculator" android:theme="@style/Theme.Licenses"/>
++        <activity android:launchMode="singleTop" android:name="com.android.calculator2.Licenses" android:parentActivityName="com.android.calculator2.Calculator" android:theme="@style/Theme.Licenses"/>
+     </application>
+ </manifest>
+--- a/apktool.yml
++++ b/apktool.yml
+@@ -4,7 +4,7 @@
+   ids:
+   - 1
+ sdkInfo:
+-  minSdkVersion: 26
++  minSdkVersion: 23
+   targetSdkVersion: 26
+ versionInfo:
+   versionCode: 26
+--- a/smali/com/android/calculator2/CalculatorText.smali
++++ b/smali/com/android/calculator2/CalculatorText.smali
+@@ -200,7 +200,7 @@
+ 
+     const/16 v2, 0x17
+ 
+-    if-lt v1, v2, :cond_0
++    goto :cond_0
+ 
+     .line 81
+     invoke-direct {p0}, Lcom/android/calculator2/CalculatorText;->setupActionMode()V
+--- a/smali/com/android/calculator2/CalculatorResult.smali
++++ b/smali/com/android/calculator2/CalculatorResult.smali
+@@ -279,7 +279,7 @@
+ 
+     const/16 v1, 0x17
+ 
+-    if-lt v0, v1, :cond_0
++    goto :cond_0
+ 
+     .line 206
+     invoke-direct {p0}, Lcom/android/calculator2/CalculatorResult;->setupActionMode()V
+
