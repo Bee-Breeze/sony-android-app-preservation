@@ -1,0 +1,161 @@
+diff -ruN a/AndroidManifest.xml b/AndroidManifest.xml
+--- a/AndroidManifest.xml	2026-07-19 22:23:25
++++ b/AndroidManifest.xml	2026-07-19 22:23:25
+@@ -36,14 +36,14 @@
+     <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+-    <application android:icon="@drawable/app_icon" android:label="@string/app_label" android:name="CalendarApplication" android:requiredAccountType="*" android:supportsRtl="true" android:taskAffinity="android.task.calendar">
++    <application android:icon="@drawable/app_icon" android:label="@string/app_label" android:maxAspectRatio="10.0" android:name="CalendarApplication" android:requiredAccountType="*" android:resizeableActivity="true" android:supportsRtl="true" android:taskAffinity="android.task.calendar">
+         <uses-library android:name="android.test.runner"/>
+-        <uses-library android:name="com.sonymobile.provider.tasks_1"/>
+-        <uses-library android:name="com.sonyericsson.uxpres"/>
++        <uses-library android:name="com.sonymobile.provider.tasks_1" android:required="false"/>
++        <uses-library android:name="com.sonyericsson.uxpres" android:required="false"/>
+         <provider android:authorities="com.android.calendar.VCalendarParser" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+         </provider>
+-        <activity android:configChanges="keyboardHidden" android:launchMode="singleTask" android:name="com.android.calendar.LaunchActivity" android:theme="@style/CalendarTheme.WithActionBar" android:windowSoftInputMode="adjustNothing">
++        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:launchMode="singleTask" android:maxAspectRatio="10.0" android:name="com.android.calendar.LaunchActivity" android:resizeableActivity="true" android:theme="@style/CalendarTheme.WithActionBar" android:windowSoftInputMode="adjustNothing">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+diff -ruN a/res/values/styles.xml b/res/values/styles.xml
+--- a/res/values/styles.xml	2026-07-19 22:28:01
++++ b/res/values/styles.xml	2026-07-19 22:28:01
+@@ -409,7 +409,7 @@
+     <style name="default_background_style">
+         <item name="android:background">@null</item>
+     </style>
+-    <style name="ActionBarCustomButton" parent="@android:attr/actionMenuTextAppearance">
++    <style name="ActionBarCustomButton" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu">
+         <item name="android:textSize">16.0sp</item>
+         <item name="android:gravity">center_vertical</item>
+         <item name="android:layout_gravity">center</item>
+@@ -418,7 +418,7 @@
+         <item name="android:drawablePadding">8.0dp</item>
+         <item name="android:paddingEnd">8.0dp</item>
+     </style>
+-    <style name="MenuItemTextStyle" parent="@android:attr/actionMenuTextAppearance">
++    <style name="MenuItemTextStyle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu">
+         <item name="android:textSize">16.0dp</item>
+     </style>
+     <style name="WhiteHeaderDayText">
+@@ -501,7 +501,7 @@
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:elevation">@dimen/toolbar_elevation</item>
+     </style>
+-    <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
++    <style name="RecipientEditTextViewBase" parent="@android:style/Widget.Material.AutoCompleteTextView">
+         <item name="android:textAppearance">?android:textAppearanceMedium</item>
+         <item name="android:background">@null</item>
+         <item name="android:layout_width">match_parent</item>
+diff -ruN a/smali/com/android/calendar/editevent/EditEventView.smali b/smali/com/android/calendar/editevent/EditEventView.smali
+--- a/smali/com/android/calendar/editevent/EditEventView.smali	2026-07-19 22:23:25
++++ b/smali/com/android/calendar/editevent/EditEventView.smali	2026-07-19 22:23:25
+@@ -5753,42 +5753,87 @@
+ .end method
+ 
+ .method private launchMapsActivity()V
+-    .locals 3
++    .locals 5
+ 
+     .prologue
+     .line 1629
+-    new-instance v0, Landroid/content/Intent;
++    iget-object v0, p0, Lcom/android/calendar/editevent/EditEventView;->mLocationTextView:Landroid/widget/TextView;
+ 
+-    iget-object v1, p0, Lcom/android/calendar/editevent/EditEventView;->activity:Landroid/app/Activity;
++    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+ 
+-    const-class v2, Lcom/android/calendar/MapsActivity;
++    move-result-object v0
+ 
+-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
++    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+ 
+-    .line 1630
+-    .local v0, "intent":Landroid/content/Intent;
+-    const-string v1, "addressField"
++    move-result-object v0
+ 
+-    iget-object v2, p0, Lcom/android/calendar/editevent/EditEventView;->mLocationTextView:Landroid/widget/TextView;
++    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
+ 
+-    invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
++    move-result-object v0
+ 
+-    move-result-object v2
++    invoke-virtual {v0}, Ljava/lang/String;->length()I
+ 
+-    invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
++    move-result v1
+ 
+-    move-result-object v2
++    if-lez v1, :cond_empty_location
+ 
+-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
++    invoke-static {v0}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
+ 
+-    .line 1631
+-    iget-object v1, p0, Lcom/android/calendar/editevent/EditEventView;->activity:Landroid/app/Activity;
++    move-result-object v0
+ 
+-    const/4 v2, 0x5
++    new-instance v1, Ljava/lang/StringBuilder;
+ 
+-    invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
++    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+ 
++    const-string v2, "geo:0,0?q="
++
++    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v1
++
++    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v0
++
++    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
++
++    move-result-object v0
++
++    goto :goto_parse_uri
++
++    :cond_empty_location
++    const-string v0, "geo:0,0"
++
++    :goto_parse_uri
++    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
++
++    move-result-object v0
++
++    new-instance v1, Landroid/content/Intent;
++
++    const-string v2, "android.intent.action.VIEW"
++
++    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
++
++    .local v1, "intent":Landroid/content/Intent;
++    iget-object v2, p0, Lcom/android/calendar/editevent/EditEventView;->activity:Landroid/app/Activity;
++
++    invoke-virtual {v2}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
++
++    move-result-object v3
++
++    invoke-virtual {v1, v3}, Landroid/content/Intent;->resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
++
++    move-result-object v3
++
++    if-eqz v3, :cond_no_map_handler
++
++    const/4 v4, 0x5
++
++    invoke-virtual {v2, v1, v4}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
++
+     .line 1632
++    :cond_no_map_handler
+     return-void
+ .end method
+ 
