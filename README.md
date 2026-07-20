@@ -11,14 +11,15 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 
 ## 狀態
 
-目前先以 1930's、2D Code Scanner、Calculator、Calendar 與 Sony Calculator
-建立完整的階段四至八公開範本。
+目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
+Calendar 與 Sony Calculator 建立完整的階段四至八公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
 | 目錄索引 | App | 最終分支 | Sony Android 13 | HTC Android 6 | 發布模式 |
 | --- | --- | --- | --- | --- | --- |
 | 0 | [1930's](apps/1930s-1.0.1/) | 1.0.1 portable v1 + host max-aspect v3 | 通過 | 失敗：缺少 host | 僅 Patchset |
 | 1 | [2D Code Scanner](apps/2d-code-scanner-1.0.2.A.0.1/) | 1.0.2.A.0.1 portable v2 | 通過 | 失敗：32-bit ABI | 僅 Patchset |
+| 67 | [Browser (small app)](apps/browser-small-app-3.2.3/) | 3.2.3 authentic standalone v3c | 通過 | 通過 | 僅 Patchset |
 | 72 | [Calculator](apps/calculator-8.0.0/) | 8.0.0 portable repair v1 | 通過 | 通過 | 僅 Patchset |
 | 74 | [Calendar](apps/calendar-20.0.A.4.22/) | 20.0.A.4.22 portable repair v3 | 通過 | 有限制通過 | 僅 Patchset |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |

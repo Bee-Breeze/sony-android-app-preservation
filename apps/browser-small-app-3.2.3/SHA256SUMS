@@ -1,0 +1,15 @@
+b6f37a031e0ce335a5933df1434bba85eb274d6f5f9f87eb8cec9ccdb4929832  ./PATCH_NOTES.md
+d857648a9d376a37a890f6f25ad1f2075f6f2f7240ad6383deb43320e4667273  ./README.md
+7a6e1ea9802d047ad0dfaae643a24d892cb7e6f208453c2d19a44b1edf34092a  ./evidence/records/deep-control-ledger.tsv
+43d01317db274e7b1822750058b098b5658de43e88612b3598dfd14a7774eb05  ./evidence/records/publication-privacy-review.md
+6a6b05f024ef4b6e9410935d96cd9ca43664c8ca0a003d97630023e571a933f6  ./evidence/records/reproducible-build.md
+4d61d5ace550935af7ac027495a8a988146c9fd03f01a992b3b89f3104b9b406  ./evidence/records/technical-test-summary.md
+172de75834a64bf4cd3ac72fd1b4d1cca6ed7f85f3d37799711776cddb61549d  ./evidence/screenshots/htc-main.png
+6296ec2bf72de69c8450cad1f3822902c926ff34561b5319babb2ae3852e77df  ./evidence/screenshots/htc-menu.png
+eb392d17643a003940d5f73ab48d98ccfa639a9eee32d7b1bf45fceec9c74b57  ./evidence/screenshots/sony-landscape.png
+0d23de819c8574cf0c3450239474d529159b79c0551aafc672ba9a22d7a125ae  ./evidence/screenshots/sony-main.png
+65395a49e02117f4538d55ca9f5da1b252ada9879a29256200eba2883bd4387f  ./evidence/screenshots/sony-menu.png
+53ecf526459bb3988986a6ecdf92680fa041548d6d6912c47812b4ce09986ee8  ./patches/AndroidManifest.patch
+fabbdaaed6e17dbb8fa7a50ae527ab3425444ce31920628578d5abcf4ad5f13e  ./patches/FullBrowserActivity.java
+7835d9c8ba8621be5e55554ba6f1442f6f584ac5aea42ddf2e0fa3ce69759d2c  ./scripts/build-and-sign.sh
+2be0f36400c3274b9e14875dbe94b73ad400574a2e6cad5152487782402a2ebf  ./scripts/verify-input.sh

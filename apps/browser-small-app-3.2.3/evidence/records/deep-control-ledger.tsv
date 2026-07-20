@@ -1,0 +1,47 @@
+screen	control	label	type	risk	action	observed	status	evidence
+main	MAIN-01	上一頁	image_button	safe	tap after Home	navigated Google to Example Domain	passed	repair_v3_authentic_ui/sony-back-v3c.xml
+main	MAIN-02	下一頁	image_button	safe	tap after back	navigated Example Domain to Google	passed	repair_v3_authentic_ui/sony-forward-v3c.xml
+main	MAIN-03	重新整理/停止	image_button	safe	tap loaded page	page reloaded and activity remained resumed	passed	deep/main-after-reload-activity.txt
+main	MAIN-04	網址輸入	text_field	safe	load https URL	Example Domain loaded	passed	repair_v3_authentic_ui/sony-example-v3c.png
+main	MAIN-05	關鍵字搜尋	text_field	safe	enter sony mobile	Google search URL and results loaded	passed	deep/main-search-results.xml
+main	MAIN-06	更多	image_button	safe	tap right edge	original Sony menu opened	passed	repair_v3_authentic_ui/sony-menu-v3c.png
+main	MAIN-07	書籤	image_button	reversible	add current page	Example Domain inserted into Sony provider	passed	repair_v3_authentic_ui/sony-bookmarks-list-v3c.xml
+main	MAIN-08	外部開啟	image_button	external_dependency	open current URL	handoff reached installed external browser	passed	repair_v3_authentic_ui/sony-external-chooser-v3c.xml
+menu	MENU-01	選單下一頁	image_button	safe	inspect disabled state	disabled with no forward history	passed	repair_v3_authentic_ui/sony-menu-v3c.xml
+menu	MENU-02	選單重新整理	image_button	safe	tap	page reload path shared with toolbar	passed	repair_v3_authentic_ui/sony-menu-v3c.xml
+menu	MENU-03	選單書籤	image_button	reversible	tap	bookmark insert and readback passed	passed	repair_v3_authentic_ui/sony-bookmarks-list-v3c.xml
+menu	MENU-04	使用其他應用程式開啟	text_row	external_dependency	tap	external browser handoff passed	passed	repair_v3_authentic_ui/sony-external-chooser-v3c.xml
+menu	MENU-05	首頁	text_row	safe	tap	loaded https://www.google.com/	passed	repair_v3_authentic_ui/sony-home-v3c.xml
+menu	MENU-06	書籤	text_row	safe	tap	saved bookmark list displayed	passed	repair_v3_authentic_ui/sony-bookmarks-list-v3c.png
+menu	MENU-07	要求桌面版網站	checkbox	reversible	toggle and restore	checked state and persisted flag changed then restored	passed	repair_v3_authentic_ui/sony-desktop-checked-v3c.xml
+menu	MENU-08	設定	text_row	safe	tap	original BrowserPreferencesPage opened	passed	repair_v3_authentic_ui/sony-settings-v3c.png
+settings	SET-01	返回	image_button	safe	tap/back	returned to caller/header	passed	deep/about-logcat.txt
+settings	SET-02	一般設定	header	safe	tap	general screen opened	passed	deep/settings-map/general.xml
+settings	SET-03	隱私權與安全性	header	safe	tap	privacy screen opened	passed	deep/settings-map/privacy.xml
+settings	SET-04	協助工具	header	safe	tap	accessibility screen opened	passed	deep/settings-map/accessibility.xml
+settings	SET-05	進階	header	safe	tap	advanced screen opened	passed	deep/settings-map/advanced.xml
+settings	SET-06	頻寬管理	header	safe	tap	bandwidth screen opened	passed	deep/settings-map/bandwidth.xml
+settings	SET-07	相關資訊	header	safe	tap	about screen opened	passed	deep/settings-map/about.xml
+general	GEN-01	設定首頁	list	reversible	select current then default	summary changed to example.com then restored	passed	deep/general-homepage-restored.xml
+privacy	PRIV-01	清除快取	confirm_action	reversible	cancel then confirm	cache action completed and became disabled	passed	deep/privacy-after-actions.xml
+privacy	PRIV-02	清除記錄	confirm_action	reversible	confirm	history action completed and became disabled	passed	deep/privacy-after-actions.xml
+privacy	PRIV-03	顯示安全性警告	checkbox	reversible	toggle twice	state restored	passed	deep/privacy-actions.txt
+privacy	PRIV-04	接受 Cookie	checkbox	reversible	toggle twice	state restored	passed	deep/privacy-actions.txt
+privacy	PRIV-05	清除所有 Cookie	confirm_action	reversible	confirm	action completed and became disabled	passed	deep/privacy-after-actions.xml
+privacy	PRIV-06	儲存表單資料	checkbox	reversible	toggle twice	state restored	passed	deep/privacy-actions.txt
+privacy	PRIV-07	清除表單資料	confirm_action	reversible	confirm	action completed and became disabled	passed	deep/privacy-after-actions.xml
+privacy	PRIV-08	啟用定位功能	checkbox	reversible	toggle twice	state and dependency restored	passed	deep/privacy-actions.txt
+privacy	PRIV-09	清除位置資訊存取權	confirm_action	reversible	confirm	action completed and became disabled	passed	deep/privacy-after-actions.xml
+accessibility	ACC-01	文字比例	seekbar	reversible	change and restore	160% observed then restored to 100%	passed	deep/accessibility-restored2.xml
+accessibility	ACC-02	最小字型大小	seekbar	reversible	change and restore	14pt observed then restored to 1pt	passed	deep/accessibility-restored2.xml
+advanced	ADV-01	設定搜尋引擎	list	reversible	select Bing then Google	Bing summary observed and Google restored	passed	deep/advanced-search-bing.xml
+advanced	ADV-02	啟用 JavaScript	checkbox	reversible	toggle twice	state restored	passed	deep/advanced-logcat.txt
+advanced	ADV-03	網站設定	text_row	external_dependency	inspect runtime state	disabled because no per-site grants exist	not_applicable	deep/settings-map/advanced.xml
+advanced	ADV-04	以總覽模式開啟網頁	checkbox	reversible	toggle twice	state restored	passed	deep/advanced-logcat.txt
+advanced	ADV-05	文字編碼	list	reversible	select UTF-8 then Latin-1	UTF-8 observed and Latin-1 restored	passed	deep/advanced-encoding-utf8.xml
+advanced	ADV-06	還原至初始設定	confirm_action	destructive_needs_backup	cancel then confirm	reset completed and returned Home; backup restored	passed	deep/advanced-reset-confirmed.xml
+bandwidth	BW-01	預先載入搜尋結果	list	reversible	select ALWAYS then WIFI_ONLY	preference changed and restored	passed	deep/bandwidth-restored-prefs.xml
+bandwidth	BW-02	載入圖片	checkbox	reversible	toggle twice	true restored	passed	deep/bandwidth-restored-prefs.xml
+about	ABOUT-01	開放原始碼授權	text_row	safe	tap	NOTICE dialog opened	passed	deep/about-license.png
+license	LICENSE-01	垂直捲動	gesture	safe	swipe	license text scrolls vertically	passed	deep/about-license.png
+license	LICENSE-02	水平捲動	gesture	safe	swipe	preformatted license text pans horizontally	passed	deep/about-license-horizontal-scroll.png

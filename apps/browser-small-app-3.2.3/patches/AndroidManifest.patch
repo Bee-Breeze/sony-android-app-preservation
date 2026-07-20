@@ -1,0 +1,34 @@
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -13,7 +13,21 @@
+     <uses-permission android:name="com.sony.smallapp.permission.SMALLAPP"/>
+     <uses-permission android:name="android.permission.GET_TASKS"/>
+     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+-    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher_browser" android:label="@string/plusone_app_name" android:name="com.android.browser.Browser">
++    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher_browser" android:label="@string/plusone_app_name" android:name="com.android.browser.Browser" android:resizeableActivity="true">
++        <meta-data android:name="android.max_aspect" android:value="3.0"/>
++        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/plusone_app_name" android:name="com.sonymobile.smallbrowser.FullBrowserActivity" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN"/>
++                <category android:name="android.intent.category.LAUNCHER"/>
++            </intent-filter>
++            <intent-filter>
++                <action android:name="android.intent.action.VIEW"/>
++                <category android:name="android.intent.category.DEFAULT"/>
++                <category android:name="android.intent.category.BROWSABLE"/>
++                <data android:scheme="http"/>
++                <data android:scheme="https"/>
++            </intent-filter>
++        </activity>
+         <provider android:authorities="com.sonymobile.smallbrowser;com.sonymobile.smallbrowser.legacy" android:multiprocess="true" android:name="com.android.browser.provider.BrowserProvider2" android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS" android:writePermission="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS">
+             <path-permission android:path="/bookmarks/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+         </provider>
+@@ -24,7 +38,6 @@
+             </intent-filter>
+         </activity>
+         <provider android:authorities="com.sonymobile.smallbrowser.home" android:exported="false" android:name="com.android.browser.homepages.HomeProvider" android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+-        <uses-library android:name="com.sony.smallapp.framework"/>
+         <service android:icon="@mipmap/ic_launcher_browser" android:label="@string/plusone_app_name" android:name="com.android.browser.plusone.Browser">
+             <intent-filter android:icon="@mipmap/ic_launcher_browser" android:label="@string/application_name">
+                 <action android:name="com.sony.smallapp.intent.action.MAIN"/>
+
