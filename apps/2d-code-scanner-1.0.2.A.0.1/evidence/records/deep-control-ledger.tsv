@@ -1,0 +1,3 @@
+screen_id	control_id	label	type	risk	action	expected	observed	status	evidence	cleanup
+permission_error	close	關閉	button	safe	Tap the runtime-derived button center	Permission dialog closes	Dialog closed without fatal or ANR	passed	Private permission-denial screenshot, UI tree and filtered log	Camera and microphone grants restored
+scanner_main	core_qr_url	URL QR through physical rear camera	hardware_workflow	safe	Show documentation-only QR to physical lens	Scanner decodes and launches URL	App UID launched ACTION_VIEW; resolver opened Chrome and Example Domain loaded	passed	Public QR-result screenshot; private attributable log	Browser left unchanged; scanner permissions and system settings restored
