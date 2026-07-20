@@ -1,0 +1,85 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,7 +1,8 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.calculator2">
+-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+-        <activity android:name="Calculator" android:theme="@android:style/Widget.Holo.Button.Borderless.Small">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.calculator2.preserved">
++    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
++    <application android:icon="@drawable/icon" android:label="@string/app_name" android:resizeableActivity="true">
++        <activity android:maxAspectRatio="3.0" android:name="com.android.calculator2.Calculator" android:resizeableActivity="true" android:theme="@android:style/Widget.Holo.Button.Borderless.Small">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+                 <category android:name="android.intent.category.LAUNCHER"/>
+diff --git a/res/values-land/styles.xml b/res/values-land/styles.xml
+new file mode 100644
+--- /dev/null
++++ b/res/values-land/styles.xml
+@@ -0,0 +1,30 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="button_style">
++        <item name="android:textSize">16.0sp</item>
++        <item name="android:background">@drawable/transparent_button</item>
++        <item name="android:focusable">true</item>
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">match_parent</item>
++        <item name="android:layout_margin">2.0dp</item>
++        <item name="android:layout_marginLeft">1.0dp</item>
++        <item name="android:layout_weight">1.0</item>
++    </style>
++    <style name="digit_button_style" parent="@style/button_style">
++        <item name="android:background">@drawable/transparent_button</item>
++    </style>
++    <style name="button_small_style" parent="@style/button_style">
++        <item name="android:textSize">13.0sp</item>
++    </style>
++    <style name="display_style">
++        <item name="android:textSize">18.0sp</item>
++        <item name="android:textColor">#ffffff</item>
++        <item name="android:gravity">right|center</item>
++        <item name="android:padding">8.0dp</item>
++        <item name="android:scrollbars">none</item>
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">match_parent</item>
++        <item name="android:maxLines">1</item>
++        <item name="android:scrollHorizontally">true</item>
++    </style>
++</resources>
+diff --git a/res/values-port/styles.xml b/res/values-port/styles.xml
+new file mode 100644
+--- /dev/null
++++ b/res/values-port/styles.xml
+@@ -0,0 +1,30 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="button_style">
++        <item name="android:textSize">22.0sp</item>
++        <item name="android:background">@drawable/transparent_button</item>
++        <item name="android:focusable">true</item>
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">match_parent</item>
++        <item name="android:layout_margin">2.0dp</item>
++        <item name="android:layout_marginLeft">1.0dp</item>
++        <item name="android:layout_weight">1.0</item>
++    </style>
++    <style name="digit_button_style" parent="@style/button_style">
++        <item name="android:background">@drawable/transparent_button</item>
++    </style>
++    <style name="button_small_style" parent="@style/button_style">
++        <item name="android:textSize">18.0sp</item>
++    </style>
++    <style name="display_style">
++        <item name="android:textSize">28.0sp</item>
++        <item name="android:textColor">#ffffff</item>
++        <item name="android:gravity">right|center</item>
++        <item name="android:padding">8.0dp</item>
++        <item name="android:scrollbars">none</item>
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">match_parent</item>
++        <item name="android:maxLines">1</item>
++        <item name="android:scrollHorizontally">true</item>
++    </style>
++</resources>

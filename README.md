@@ -20,12 +20,13 @@ Calendar 與 Sony Calculator 建立完整的階段四至八公開範本。
 | 0 | [1930's](apps/1930s-1.0.1/) | 1.0.1 portable v1 + host max-aspect v3 | 通過 | 失敗：缺少 host | 僅 Patchset |
 | 1 | [2D Code Scanner](apps/2d-code-scanner-1.0.2.A.0.1/) | 1.0.2.A.0.1 portable v2 | 通過 | 失敗：32-bit ABI | 僅 Patchset |
 | 67 | [Browser (small app)](apps/browser-small-app-3.2.3/) | 3.2.3 authentic standalone v3c | 通過 | 通過 | 僅 Patchset |
+| 72（歷史版） | [Calculator](apps/calculator-2.1-update1/) | 2.1-update1 portable responsive v4 | 通過 | 通過 | 僅 Patchset |
 | 72 | [Calculator](apps/calculator-8.0.0/) | 8.0.0 portable repair v1 | 通過 | 通過 | 僅 Patchset |
 | 74 | [Calendar](apps/calendar-20.0.A.4.22/) | 20.0.A.4.22 portable repair v3 | 通過 | 有限制通過 | 僅 Patchset |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |
 
-歷史版 `2.1-update1` 已完成獨立驗證，可另行發布與推廣，但不增加 840 筆
-目錄的完成數。
+歷史版 `2.1-update1` 已完成獨立驗證並建立個別研究頁，但它與 8.0.0
+屬於同一 catalog row，因此不重複增加 840 筆目錄的完成數。
 
 ## 範圍
 
