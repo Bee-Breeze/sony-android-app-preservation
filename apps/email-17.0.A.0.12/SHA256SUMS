@@ -1,0 +1,7 @@
+9d3301c0140daa4bb66554fd103ef980828d43f512da11a782436d4e42c35c0f  ./README.md
+00bcfe9b7bfd7841cf697df81675362ee3e90660ea839ac648f704f7b8b34f91  ./evidence/records/publication-privacy-review.md
+3a46e95b6f3a80a1eaf8d786136d9f9f5cd1fc753c05b5b05581ee22f4b4065f  ./evidence/records/technical-test-summary.md
+ba74709cceca3e0778859d4535c930dcf4eb6d29c9a5f66cf98ea4f1e32305ad  ./evidence/screenshots/email-inbox-synthetic.png
+b0ee92c31f192772d141b4bd2cc5ab4db18d87aee4b5dde7cdafb7e8a102a520  ./evidence/screenshots/email-message-synthetic.png
+d41e03b408ac8a80b25375d166e7841dafc8fb65bf1fa84a96a8d5dcf1667e48  ./patches/PRACTICAL_REPAIR.md
+62a23ac02a39c23e633026957d8a20623bee80bc9b9c5c5feb358d4261927bb1  ./patches/apply_practical_repair.py
