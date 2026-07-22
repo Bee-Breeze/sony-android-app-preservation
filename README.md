@@ -12,7 +12,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 ## 狀態
 
 目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
-Calendar、Contacts、Email、Lifelog、Movie Creator 與 Sony Calculator 建立完整的階段四至八公開範本。
+Calendar、Contacts、Email、Lifelog、Movie Creator、Sketch 與 Sony Calculator 建立完整的階段四至八公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
 | 目錄索引 | App | 最終分支 | Sony Android 13 | HTC Android 6 | 發布模式 |
@@ -27,6 +27,7 @@ Calendar、Contacts、Email、Lifelog、Movie Creator 與 Sony Calculator 建立
 | Z3M-A084 | [Email](apps/email-17.0.A.0.12/) | 17.0.A.0.12 practical repair v1 | 通過 | 失敗：最低 API 30 | 僅 Patchset |
 | Z3M-A053 | [Lifelog](apps/lifelog-4.0.A.0.39/) | 4.0.A.0.39 unchanged original | 通過 | 通過 | 僅證據 |
 | Z3M-A094 | [Movie Creator](apps/movie-creator-5.8.A.0.1/) | 5.8.A.0.1 unchanged original | 通過 | 失敗：缺少 `com.sony.device` | 僅證據 |
+| Z3M-A096 | [Sketch](apps/sketch-9.0.A.0.6/) | 9.0.A.0.6 unchanged original | 通過 | 通過 | 僅證據 |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |
 
 歷史版 `2.1-update1` 已完成獨立驗證並建立個別研究頁，但它與 8.0.0
