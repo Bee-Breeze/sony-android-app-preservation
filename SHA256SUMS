@@ -1,7 +1,7 @@
 fb25a78a6381f5646d71aacea4486f6aeeeb03c4d71740227011024be0d20a8f  .gitattributes
 a80cce7480135fc127122dea5dca009e1391d93652e1e3b68e36a49223ba9c96  .gitignore
 129c1d8bb5c5b461cd2ea646387c2640ef818630369b47f25d9419adf1c61179  LICENSE
-648da339ba67652b57e1db95660eb13c32736b12678c55de6379cc85a03d614f  README.md
+d07da997bc9abd4145bcc5365e993475badfe4813a431cc21ea3af6ad71fb702  README.md
 be460931bf5f51754729de3670c52b51f7d0680b6276786ce47d0b691eaa430e  apps/1930s-1.0.1/README.md
 db05dde8b8a17dbadf92fc5dbacc2731af4f0fe315f73e5354456f16566dcaf6  apps/1930s-1.0.1/evidence/records/cross-oem-result.tsv
 def41e00234db9eb81b70f74ebf629dfafa7099b118078c693a648be8eb0f66f  apps/1930s-1.0.1/evidence/records/publication-privacy-review.md
@@ -28,6 +28,11 @@ afe9150509a3e8bb0fed0a2953e6d8a3d13634b84b06bb4dcb2baced526eccd2  apps/2d-code-s
 7ff88a9b4b395d0247b7f06455fd8740006050c05c9dc8c03e705b06d9f56c15  apps/2d-code-scanner-1.0.2.A.0.1/tools/patch_binary_axml_bool.py
 0f7d6b3de96b5331fb746ffef2af68589d4fb6c60e27d09aefcd781338748894  apps/2d-code-scanner-1.0.2.A.0.1/tools/rebuild_zip_with_replacement.py
 c2a2ad7831aa912ac934ac33d3ba1f25d6f7c0793046e849944e122b8797dd6e  apps/2d-code-scanner-1.0.2.A.0.1/tools/rewrite_binary_axml_attribute.py
+b1aaf9c5ee41e3fc2f8ee100529675c6aec8a4b89779857852c8f33bb233ff95  apps/album-9.9.A.0.20/README.md
+688ca0654af7e5f9c093cfbaecd39fc32e1a497062c9aff2541b283e40935db9  apps/album-9.9.A.0.20/evidence/records/publication-privacy-review.md
+6f6acf7b98eb40534820abc1a537bd9c10b39303df1b8cff3c609096ee92e3b8  apps/album-9.9.A.0.20/evidence/records/technical-test-summary.md
+5119e4691e268c87e81c2a38f0d77e328183690e6b5b11cfcee9b0ef69b097d5  apps/album-9.9.A.0.20/evidence/screenshots/album-empty-main.png
+a4fcefa51b2bfb5ff22f4f632cd1ed7d773c7e5575d9b00144837f492861d841  apps/album-9.9.A.0.20/evidence/screenshots/album-settings.png
 b6f37a031e0ce335a5933df1434bba85eb274d6f5f9f87eb8cec9ccdb4929832  apps/browser-small-app-3.2.3/PATCH_NOTES.md
 d857648a9d376a37a890f6f25ad1f2075f6f2f7240ad6383deb43320e4667273  apps/browser-small-app-3.2.3/README.md
 7a6e1ea9802d047ad0dfaae643a24d892cb7e6f208453c2d19a44b1edf34092a  apps/browser-small-app-3.2.3/evidence/records/deep-control-ledger.tsv
@@ -83,6 +88,11 @@ c35dc2721d1a9d4fbef2e216dfce35304ca40912cd8a6812c521fe6e55d7bf31  apps/calendar-
 129fa068c9f63d9186174b98f6d8c872fa120434486e97956d30fab1efe8e2cb  apps/calendar-20.0.A.4.22/patches/calendar-20.0.A.4.22-portable-v3.patch
 3f1e68bf3ee68cd70558be49f4db7092a85970c5058916d250c8198ac4c26b5a  apps/calendar-20.0.A.4.22/scripts/build-and-sign.sh
 7748d5d3871c4fa36083b4c142d50066a660a21bfca72fcacc3f44ccf2c90efe  apps/calendar-20.0.A.4.22/scripts/verify-input.sh
+a9607c1c052c31002b2a6c994c28f21c756048eb1036f88a932876eaf46c7de2  apps/clock-20.2.A.2.49/README.md
+8fae5be037c2167c413218293df981d96b3207bdad0a2f08d4060bfa99769b2d  apps/clock-20.2.A.2.49/evidence/records/publication-privacy-review.md
+ec253511faa58549c80ba4ae4109516dff1abbb5a75186c792bd2f37ea04c0ac  apps/clock-20.2.A.2.49/evidence/records/technical-test-summary.md
+2cc6fe5734ab8b78560f5da229f3b3329ea1b269a29f7bed17d3f4c49582066b  apps/clock-20.2.A.2.49/evidence/screenshots/alarm-main.png
+110ea4262fbf19f670959860119e299404cb5a214dc7bcc800b313b79a756424  apps/clock-20.2.A.2.49/evidence/screenshots/stopwatch-reset.png
 655cae0657cc572f596a86f4c9b36742c5bde5026334681a1e0a31346be52a49  apps/contacts-2.3.3/README.md
 b5f9793566c373ceb23ca9122b07968eb0ce00b66fe33791468434803d318a46  apps/contacts-2.3.3/evidence/records/TESTING.md
 b464a3866988b8ae8dd47fc81098583d33130408d89a252d191a021185e0a59a  apps/contacts-2.3.3/evidence/screenshots/sony-dialpad-portrait.png
@@ -106,6 +116,12 @@ e83c9bccdc80413b7e4cdba708dc3b3d021c917ea73ada4da459e9e9a0b0370e  apps/movie-cre
 2cd41984805e53b236ddd2270bd833502dcb61c175523d9bf44b68173154b648  apps/movie-creator-5.8.A.0.1/evidence/screenshots/movie-creator-main.png
 26663a83156d2fc0878bd4a8c1ff12d2bea76aec3e1890b921cad84542498e55  apps/movie-creator-5.8.A.0.1/evidence/screenshots/movie-creator-synthetic-project.png
 f8a984939afeeedf3e205f31b9e65e5729eb5dea915717d7c50ae34ecf9d68c6  apps/movie-creator-5.8.A.0.1/evidence/screenshots/movie-creator-synthetic-selection.png
+7c60214208dd6491d438b5151489f01d4f6237f64ae1ff7d2a3f03f73db97e1e  apps/sketch-9.0.A.0.6/README.md
+ab9f02331137b3fd1b1cba9b3f6dffaa6c8113c29ea06f89a8f17f94ea1bffa7  apps/sketch-9.0.A.0.6/evidence/records/publication-privacy-review.md
+d7019e854fcb40ad024efd7420a7b8a6b9dbb90e2660b35897f59a327467ff15  apps/sketch-9.0.A.0.6/evidence/records/technical-test-summary.md
+5ddfda84d1a2ed2bfefb43021e442a51c91784efe06cea289bdabf8b50e65df8  apps/sketch-9.0.A.0.6/evidence/screenshots/sketch-editor-synthetic-sony-android13.png
+4b4591b171223d304cdcda03f42d08ecf335be7faf519cdea10319b1fe0025f2  apps/sketch-9.0.A.0.6/evidence/screenshots/sketch-main-htc-android6.png
+75e01df3a42a7f687add54ed10c81560c596a32a37e20d794611dfde1a9dc927  apps/sketch-9.0.A.0.6/evidence/screenshots/sketch-main-sony-android13.png
 8810dcbbcbed7063f6822042c54fb7088e9f82c220740b2ffe85ef9e4d7925eb  apps/sony-calculator-1.0.B.1.0/README.md
 700dd515177a3f859e03e8c4559d4a398ddb9971340b8ea02f9492415dfafccf  apps/sony-calculator-1.0.B.1.0/evidence/records/deep-control-results.tsv
 242905d42fb2f6f0c08864fc6dce4a41f058a27a39822e56c3b49c1a45b337a0  apps/sony-calculator-1.0.B.1.0/evidence/records/deep-control-summary.json
@@ -115,3 +131,8 @@ bfbb530afaeddc01a7428fee8380a17374d6145ddf83871665224f50a2131a0f  apps/sony-calc
 4ed469f65a83db926ee02548412bb07d0454bf4dc5017443378474e9c0973346  apps/sony-calculator-1.0.B.1.0/evidence/screenshots/htc-android6-portrait.png
 cc24f6070f6202cbda42a717e5bb7434263d96fbcb1e29d7155d1414d4303efe  apps/sony-calculator-1.0.B.1.0/evidence/screenshots/sony-android13-landscape.png
 934d3f74cdc775b855cd88fc94d864e20a52daac3117b0055e0700f8b80e6bc8  apps/sony-calculator-1.0.B.1.0/evidence/screenshots/sony-android13-portrait.png
+2979eea5eeb746ae77bb7607b603dcbef8eb635fe72e40ce2446a09a221db2c0  apps/xperia-calendar-20.4.C.3.10/README.md
+cd0d3331ded83c90f721e3cc501c79bfca2aaa1d8d766d94aa7c3c5703d6a3b7  apps/xperia-calendar-20.4.C.3.10/evidence/records/publication-privacy-review.md
+0b6fbbbabc0242717cf8fee5818e8073d44a825a711fc67387307c99f779f07d  apps/xperia-calendar-20.4.C.3.10/evidence/records/technical-test-summary.md
+4f17c72565ef69bc0ca8027ef19b625db74c9ad549993b5a68520c81c1e46a17  apps/xperia-calendar-20.4.C.3.10/evidence/screenshots/month-empty.png
+89fc8afcfb473494c03a19a523c52ac10e1068dcdf32636ce5d78b24638518c0  apps/xperia-calendar-20.4.C.3.10/evidence/screenshots/settings.png
