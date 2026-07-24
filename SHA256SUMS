@@ -1,7 +1,7 @@
 fb25a78a6381f5646d71aacea4486f6aeeeb03c4d71740227011024be0d20a8f  .gitattributes
 a80cce7480135fc127122dea5dca009e1391d93652e1e3b68e36a49223ba9c96  .gitignore
 129c1d8bb5c5b461cd2ea646387c2640ef818630369b47f25d9419adf1c61179  LICENSE
-d07da997bc9abd4145bcc5365e993475badfe4813a431cc21ea3af6ad71fb702  README.md
+35af1862d332925be234645ae516fed9f699eb4ee1063b920d95fb50e3dc879d  README.md
 be460931bf5f51754729de3670c52b51f7d0680b6276786ce47d0b691eaa430e  apps/1930s-1.0.1/README.md
 db05dde8b8a17dbadf92fc5dbacc2731af4f0fe315f73e5354456f16566dcaf6  apps/1930s-1.0.1/evidence/records/cross-oem-result.tsv
 def41e00234db9eb81b70f74ebf629dfafa7099b118078c693a648be8eb0f66f  apps/1930s-1.0.1/evidence/records/publication-privacy-review.md
@@ -136,3 +136,8 @@ cd0d3331ded83c90f721e3cc501c79bfca2aaa1d8d766d94aa7c3c5703d6a3b7  apps/xperia-ca
 0b6fbbbabc0242717cf8fee5818e8073d44a825a711fc67387307c99f779f07d  apps/xperia-calendar-20.4.C.3.10/evidence/records/technical-test-summary.md
 4f17c72565ef69bc0ca8027ef19b625db74c9ad549993b5a68520c81c1e46a17  apps/xperia-calendar-20.4.C.3.10/evidence/screenshots/month-empty.png
 89fc8afcfb473494c03a19a523c52ac10e1068dcdf32636ce5d78b24638518c0  apps/xperia-calendar-20.4.C.3.10/evidence/screenshots/settings.png
+0663e541d853eb9df4430c600c52b9fd5b792bc0463f6198678634063a3c9a03  apps/xperia-lounge-3.4.10/PATCH_NOTES.md
+01b8290933edc810245d5af052f4194d8c4dd2deb311661287542b5c13bb078d  apps/xperia-lounge-3.4.10/README.md
+ea101e779961faac0a1a021b6ebe7df2d034aa193326349541a70b277ed9ccab  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-about-sony-android13.png
+987a821acce2c6e33d74e6de8d9c92cf4dec41a5996186e9a88c34a9d406eb2d  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-main-htc-android6.png
+44cfb4d3fc529bcae813c97bb65455625104f81275aaa5c6296c1959ce0eed58  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-main-sony-android13.png
