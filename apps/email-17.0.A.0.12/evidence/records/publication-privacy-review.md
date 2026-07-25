@@ -1,12 +1,16 @@
 # Publication privacy review
 
 - Decision: `passed_after_redaction`
-- Public mode: documentation, project-owned patch tool and two screenshots; no APK
+- Public mode: documentation, project-owned Practical repair tool, OAuth
+  evidence-only recovery record and two screenshots; no APK
 - Screenshots: two exact final PNGs, original-pixel and OCR reviewed
 - Content: reserved `.test` addresses and explicit synthetic fixtures only
 - Status/navigation bars: removed
 - PNG metadata and appended trailer data: removed and checked
 - Account, notification, device ID, private mail, location, path and credential content: absent
+- Recovered OAuth artifact review: no embedded private account, password,
+  client secret, pre-issued access token or refresh token was found; the APK,
+  decompiled code and Google library binaries are excluded from the public tree
 - Exact Email candidate scan: 8 files, zero findings; no allowlist required
 - Whole-repository pre-commit scan: two review items, both an already-public
   GitHub-generated no-reply commit identity in existing records; the exact value
