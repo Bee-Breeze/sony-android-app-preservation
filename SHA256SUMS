@@ -1,7 +1,7 @@
 fb25a78a6381f5646d71aacea4486f6aeeeb03c4d71740227011024be0d20a8f  .gitattributes
 a80cce7480135fc127122dea5dca009e1391d93652e1e3b68e36a49223ba9c96  .gitignore
 129c1d8bb5c5b461cd2ea646387c2640ef818630369b47f25d9419adf1c61179  LICENSE
-35af1862d332925be234645ae516fed9f699eb4ee1063b920d95fb50e3dc879d  README.md
+7a2fc72fac8bd7fbf831ccdbbb4d4347747b342b9072541c518b4a27b7256301  README.md
 be460931bf5f51754729de3670c52b51f7d0680b6276786ce47d0b691eaa430e  apps/1930s-1.0.1/README.md
 db05dde8b8a17dbadf92fc5dbacc2731af4f0fe315f73e5354456f16566dcaf6  apps/1930s-1.0.1/evidence/records/cross-oem-result.tsv
 def41e00234db9eb81b70f74ebf629dfafa7099b118078c693a648be8eb0f66f  apps/1930s-1.0.1/evidence/records/publication-privacy-review.md
@@ -97,11 +97,12 @@ ec253511faa58549c80ba4ae4109516dff1abbb5a75186c792bd2f37ea04c0ac  apps/clock-20.
 b5f9793566c373ceb23ca9122b07968eb0ce00b66fe33791468434803d318a46  apps/contacts-2.3.3/evidence/records/TESTING.md
 b464a3866988b8ae8dd47fc81098583d33130408d89a252d191a021185e0a59a  apps/contacts-2.3.3/evidence/screenshots/sony-dialpad-portrait.png
 64d2ab601370c03317ba38e88f9751bbdf8fc07a4ab1f080eac5777087f1bf74  apps/contacts-2.3.3/patches/COMPATIBILITY_PATCH.md
-9d3301c0140daa4bb66554fd103ef980828d43f512da11a782436d4e42c35c0f  apps/email-17.0.A.0.12/README.md
-00bcfe9b7bfd7841cf697df81675362ee3e90660ea839ac648f704f7b8b34f91  apps/email-17.0.A.0.12/evidence/records/publication-privacy-review.md
-3a46e95b6f3a80a1eaf8d786136d9f9f5cd1fc753c05b5b05581ee22f4b4065f  apps/email-17.0.A.0.12/evidence/records/technical-test-summary.md
+df0a5c5acc4ba0e31003c2551c5ffa165716db6ab8d97edbfd952d575b266137  apps/email-17.0.A.0.12/README.md
+33f90dd322409b30fca14dea0bdc68b9f11344d49c21e3b4c1efaea5decb0032  apps/email-17.0.A.0.12/evidence/records/publication-privacy-review.md
+364d838e7336d5d3649bce87b64b516189092a266c1490cd7c67bacf1f0395fa  apps/email-17.0.A.0.12/evidence/records/technical-test-summary.md
 ba74709cceca3e0778859d4535c930dcf4eb6d29c9a5f66cf98ea4f1e32305ad  apps/email-17.0.A.0.12/evidence/screenshots/email-inbox-synthetic.png
 b0ee92c31f192772d141b4bd2cc5ab4db18d87aee4b5dde7cdafb7e8a102a520  apps/email-17.0.A.0.12/evidence/screenshots/email-message-synthetic.png
+96d95ffe7d9746415e54ad7cbe80f0a38222d0603db58d88c0f7298a1ea9ee1f  apps/email-17.0.A.0.12/patches/GOOGLE_OAUTH_REPAIR.md
 d41e03b408ac8a80b25375d166e7841dafc8fb65bf1fa84a96a8d5dcf1667e48  apps/email-17.0.A.0.12/patches/PRACTICAL_REPAIR.md
 62a23ac02a39c23e633026957d8a20623bee80bc9b9c5c5feb358d4261927bb1  apps/email-17.0.A.0.12/patches/apply_practical_repair.py
 27c63dbb6255fe956b74b67d9a16563a4be167e9737ffee38d50f9952701436c  apps/lifelog-4.0.A.0.39/README.md
@@ -141,3 +142,6 @@ cd0d3331ded83c90f721e3cc501c79bfca2aaa1d8d766d94aa7c3c5703d6a3b7  apps/xperia-ca
 ea101e779961faac0a1a021b6ebe7df2d034aa193326349541a70b277ed9ccab  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-about-sony-android13.png
 987a821acce2c6e33d74e6de8d9c92cf4dec41a5996186e9a88c34a9d406eb2d  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-main-htc-android6.png
 44cfb4d3fc529bcae813c97bb65455625104f81275aaa5c6296c1959ce0eed58  apps/xperia-lounge-3.4.10/evidence/screenshots/lounge-main-sony-android13.png
+0e37386daaa26347a5920b8b312e786c9aead273507a5f23954320c0de1b397b  apps/xperia-weather-1.3.A.4.27/README.md
+1e2635d1759b39854ebf7f3366070928cc626101cbbb0ff72779b365486cbc15  apps/xperia-weather-1.3.A.4.27/evidence/screenshots/sony-android13-settings.png
+0e0773e0d9d6e2cc50b4c4d98484a5259068b332fee2620ad9abf599fb2ac041  apps/xperia-weather-1.3.A.4.27/evidence/screenshots/sony-android13-tokyo-main.png
