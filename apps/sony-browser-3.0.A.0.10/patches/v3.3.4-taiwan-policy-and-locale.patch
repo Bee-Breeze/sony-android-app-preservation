@@ -1,0 +1,102 @@
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values/strings.xml outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values/strings.xml
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values/strings.xml	2026-07-30 16:57:24
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values/strings.xml	2026-07-30 20:53:08
+@@ -261,7 +261,7 @@
+     <string name="policy_detail_query_package">Starting outside applications</string>
+     <string name="policy_detail_read_browse_log">"Your browsing history will be stored in Browser
+ Only used for local display. Browser will not send your data to any server, or share with 3rd parties"</string>
+-    <string name="policy_tips_end">Please read and agree to our &lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/privacy.html>Privacy Policy&lt;/a>&lt;/b> and the &lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html>Terms of service&lt;/a>&lt;/b>.</string>
++    <string name="policy_tips_end" formatted="false">Please read and agree to our &lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh>Privacy Policy&lt;/a>&lt;/b> and the &lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh>Terms of service&lt;/a>&lt;/b>.</string>
+     <string name="policy_tips_start">Browser may have following actions:</string>
+     <string name="policy_title_camera">"Use camera:
+ "</string>
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values-zh-rCN/strings.xml outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values-zh-rCN/strings.xml
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values-zh-rCN/strings.xml	2026-07-30 16:57:24
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values-zh-rCN/strings.xml	2026-07-30 20:53:08
+@@ -200,7 +200,7 @@
+     <string name="policy_detail_query_package">用于启动外部应用</string>
+     <string name="policy_detail_read_browse_log">"您的浏览记录将会被保存在此应用中
+ 仅用于本地展示，不会被上传到任意服务器或分享给第三方"</string>
+-    <string name="policy_tips_end">请您阅读并同意我们的&lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/privacy.html>隐私政策&lt;/a>&lt;/b>和&lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html>服务条款&lt;/a>&lt;/b>。</string>
++    <string name="policy_tips_end" formatted="false">请您阅读并同意我们的&lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh>隐私政策&lt;/a>&lt;/b>和&lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh>服务条款&lt;/a>&lt;/b>。</string>
+     <string name="policy_tips_start">浏览器可能会有以下行为：</string>
+     <string name="policy_title_camera">"使用相机：
+ "</string>
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values-zh-rTW/strings.xml outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values-zh-rTW/strings.xml
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/values-zh-rTW/strings.xml	2026-07-30 16:57:24
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/values-zh-rTW/strings.xml	2026-07-30 20:53:08
+@@ -204,7 +204,7 @@
+     <string name="policy_detail_query_package">供啟動其他應用程式</string>
+     <string name="policy_detail_read_browse_log">"您的瀏覽記錄會儲存在本瀏覽器中
+ 僅供本機顯示；瀏覽器不會將資料傳送至伺服器或分享給第三方"</string>
+-    <string name="policy_tips_end">請閱讀並同意我們的&lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/privacy.html>隱私權政策&lt;/a>&lt;/b>與&lt;b>&lt;a href=https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html>服務條款&lt;/a>&lt;/b>。</string>
++    <string name="policy_tips_end" formatted="false">請閱讀並同意我們的&lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh>隱私權政策&lt;/a>&lt;/b>與&lt;b>&lt;a href=https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh>服務條款&lt;/a>&lt;/b>。</string>
+     <string name="policy_tips_start">瀏覽器可能會執行下列動作：</string>
+     <string name="policy_title_camera">"使用相機：
+ "</string>
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/xml/local_config.xml outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/xml/local_config.xml
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/res/xml/local_config.xml	2026-07-30 16:57:24
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/res/xml/local_config.xml	2026-07-30 20:51:54
+@@ -3,4 +3,5 @@
+   xmlns:android="http://schemas.android.com/apk/res/android">
+     <locale android:name="en-US" />
+     <locale android:name="zh-CN" />
++    <locale android:name="zh-TW" />
+ </locale-config>
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan.smali outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan.smali
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan.smali	2026-07-30 16:57:25
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan.smali	2026-07-30 20:51:54
+@@ -81,7 +81,7 @@
+ 
+     iget-object p1, p0, Ljp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan;->url:Ljava/lang/String;
+ 
+-    const-string v0, "https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html"
++    const-string v0, "https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh"
+ 
+     .line 197
+     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -104,7 +104,7 @@
+     :cond_0
+     iget-object p1, p0, Ljp/co/sony/mc/browser/custom/PrivacyDialog$CustomUrlSpan;->url:Ljava/lang/String;
+ 
+-    const-string v0, "https://www.sony.net/Products/smartphones/cn/privacy.html"
++    const-string v0, "https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh"
+ 
+     .line 199
+     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/settings/ServiceTermActivity.smali outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/settings/ServiceTermActivity.smali
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/settings/ServiceTermActivity.smali	2026-07-30 16:57:25
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/settings/ServiceTermActivity.smali	2026-07-30 20:51:54
+@@ -195,7 +195,7 @@
+ 
+     iget-object v0, p0, Ljp/co/sony/mc/browser/settings/ServiceTermActivity;->webView:Landroid/webkit/WebView;
+ 
+-    const-string v1, "https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html"
++    const-string v1, "https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh"
+ 
+     .line 88
+     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+diff -ruN --exclude=build --exclude=dist outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/utils/Constant.smali outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/utils/Constant.smali
+--- outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/stage3-clean-diff-20260730/final/smali/jp/co/sony/mc/browser/utils/Constant.smali	2026-07-30 16:57:25
++++ outputs/sony_post_z3_sequential_20260727/work/sony-browser-516/decoded-v3.3.4-tw-final/smali/jp/co/sony/mc/browser/utils/Constant.smali	2026-07-30 20:51:54
+@@ -75,9 +75,9 @@
+ 
+ .field public static final SP_QUERY_PACKAGES_ENABLE:Ljava/lang/String; = "SP_QUERY_PACKAGES_ENABLE"
+ 
+-.field public static final TERMS_USE_URL:Ljava/lang/String; = "https://www.sony.net/Products/smartphones/cn/terms-of-use-applications.html"
++.field public static final TERMS_USE_URL:Ljava/lang/String; = "https://www.sony.com.tw/corporate/PrivacyTerms/terms.aspx?cpint=gwt%3Afooter%3Alegal%3Atnc%3Azh"
+ 
+-.field public static final XPERIA_PRIVACY_URL:Ljava/lang/String; = "https://www.sony.net/Products/smartphones/cn/privacy.html"
++.field public static final XPERIA_PRIVACY_URL:Ljava/lang/String; = "https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh"
+ 
+ 
+ # direct methods
+@@ -111,7 +111,7 @@
+     goto :goto_0
+ 
+     :cond_0
+-    const-string v0, "https://www.sony.net/Products/smartphones/cn/privacy.html"
++    const-string v0, "https://www.sony.com.tw/corporate/PrivacyTerms/privacy.aspx?cid=gwt%3Afooter%3Alegal%3Aprivacypolicy%3Azh"
+ 
+     :goto_0
+     sput-object v0, Ljp/co/sony/mc/browser/utils/Constant;->PRIVACY_URL:Ljava/lang/String;

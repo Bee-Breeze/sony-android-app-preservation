@@ -12,8 +12,8 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 ## 狀態
 
 目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
-Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、What's New、
-Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar 與 Album
+Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、Sony Browser、
+What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar 與 Album
 建立完整的公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
@@ -37,6 +37,7 @@ Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar 與 A
 | Z3M-A227 | [Clock](apps/clock-20.2.A.2.49/) | 20.2.A.2.49 unchanged original | 通過 | 失敗：缺少 Sony shared library | 僅證據 |
 | Z3M-A277 | [Album](apps/album-9.9.A.0.20/) | 9.9.A.0.20 unchanged original | 通過 | 失敗：缺少 Sony shared library | 僅證據 |
 | Z3M-A286 | [What's New](apps/whats-new-5.0.A.0.0/) | 5.0.A.0.0 community reconstruction v2 | 通過 | 通過 | 僅證據；APK 僅私人發佈 |
+| 516 | [Sony Browser](apps/sony-browser-3.0.A.0.10/) | 3.0.A.0.10 v3.3.4 Taiwan localized | 通過 | 跳過：不宣稱跨品牌 | 僅證據；APK 僅私人發佈 |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |
 
 歷史版 `2.1-update1` 已完成獨立驗證並建立個別研究頁，但它與 8.0.0
