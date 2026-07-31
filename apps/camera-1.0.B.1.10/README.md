@@ -4,7 +4,7 @@
 
 ## 狀態
 
-Xperia Z3 Android 6.0.1 時期的 Camera `1.0.B.1.10` 已修復為可在 Sony Xperia 1 III Android 13 普通安裝的相容版本。它可進入真正相機主畫面，使用前後鏡頭拍照與錄影，執行不需要 Root 或重新開機。
+Xperia Z3 Android 6.0.1 時期的 Camera `1.0.B.1.10` 已修復為可在 Sony Xperia 1 III Android 13 普通安裝的 v48 相容版本。它可進入真正相機主畫面，使用前後鏡頭拍照與錄影，執行不需要 Root 或重新開機。
 
 HTC One M8 缺少 Sony 私有共享程式庫，無法安裝同一成品，因此本項結果為 `Sony-only`，不宣稱跨品牌通用。
 
@@ -40,6 +40,7 @@ APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且
 - 後鏡頭錄影提升至 `3840 x 2160` HEVC，前鏡頭為 `1920 x 1080` H.264。
 - 修正 21:9 螢幕上的取景器置中與控制區域，並補回繁體中文 `12MP (4:3)` 標籤。
 - Xperia 1 III Camera1 HAL 無法可靠完成暫停後的錄影，因此隱藏不支援的暫停鍵，保留穩定的開始與停止錄影。
+- 修正停止錄影後立即重開 App 時，Camera HAL 偶發回傳空參數並造成閃退的問題；v48 會進行短暫、有上限的參數重試，不變更鏡頭能力或媒體規格。
 
 修復版使用本地保存測試簽章，不能直接覆蓋 Sony 原始簽章版本。
 
@@ -49,6 +50,7 @@ APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且
 - 前鏡頭 JPEG：`3264 x 2448`。
 - 後鏡頭 MP4：HEVC Main、`3840 x 2160`、約 29.97 fps、AMR-WB 音訊。
 - 前鏡頭 MP4：H.264 High、`1920 x 1080`、約 29.97 fps、AMR-WB 音訊。
+- 停止前鏡頭錄影後連續冷啟動 5 次：全部進入真正取景畫面，未出現 Camera fatal、ANR 或空參數閃退。
 - 12 個深度控制契約：11 個通過；1 個受舊版觸控層範圍限制。
 - HTC 普通安裝失敗：缺少 `com.sonyericsson.privateapis_1p`。
 
@@ -57,7 +59,7 @@ APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且
 | 裝置 | 系統 | 結果 |
 |---|---|---|
 | Sony Xperia 1 III `XQ-BC72` | Android 13 / API 33 | `accepted_sony_only` |
-| HTC One M8 | Android 6.0.1 / API 23 | 同一 v47 APK 安裝失敗，缺少 Sony 私有共享程式庫 |
+| HTC One M8 | Android 6.0.1 / API 23 | 同一 v48 APK 安裝失敗，缺少 Sony 私有共享程式庫 |
 
 ## 已知限制
 
@@ -70,7 +72,7 @@ APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且
 
 ## 截圖
 
-公開副本只包含 Camera 介面與無法辨識環境的暗色取景背景，已完成原始像素、OCR、檔案中繼資料、尾端資料與關聯風險檢查。
+公開副本只包含 Camera 介面與無法辨識環境的暗色取景背景，已完成原始像素、OCR、檔案中繼資料、尾端資料與關聯風險檢查。v48 未修改介面像素，因此沿用同一代已驗證的介面參考圖。
 
 | 手動設定與 12MP 標籤 | 解析度選項 |
 |---|---|
@@ -80,7 +82,7 @@ APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且
 
 | 項目 | SHA-256 |
 |---|---|
-| 私人 v47 相容 APK | `d27ea22353a8ea785e75a068fab91e96be927f9c33e1611bf4b70962b32b2e47` |
+| 私人 v48 相容 APK | `86a22d5853f6cbf9216c688d17b81a13044690969e5ccc176acaded99924b40d` |
 | 本地測試簽章憑證 | `b5e26a13f091dd593e8f8024e7de21cc0426d0d383feae3300035b84def9d618` |
 | 手動設定截圖 | `4f2ea674dd1ce92dd97756b63c937e8ede26523486b8c6b11edae075c6d81490` |
 | 解析度選項截圖 | `0de151f20ac4879e8ceadf8dab8952d5e793fda10e412ece8a613e1927541e16` |
