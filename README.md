@@ -13,7 +13,8 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 
 目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
 Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、Sony Browser、
-What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album 與 External monitor
+What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
+External monitor 與 Bluetooth Headset SBH56
 建立完整的公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
@@ -21,6 +22,7 @@ What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia C
 | --- | --- | --- | --- | --- | --- |
 | 0 | [1930's](apps/1930s-1.0.1/) | 1.0.1 portable v1 + host max-aspect v3 | 通過 | 失敗：缺少 host | 僅 Patchset |
 | 1 | [2D Code Scanner](apps/2d-code-scanner-1.0.2.A.0.1/) | 1.0.2.A.0.1 portable v2 | 通過 | 失敗：32-bit ABI | 僅 Patchset |
+| 63 | [Bluetooth Headset SBH56](apps/bluetooth-headset-sbh56-1.0.A.0.6/) | 1.0.A.0.6 unchanged original | 有限制通過：實體耳機功能待測 | 跳過：僅保留歷史參考 | PARTIAL 僅證據；APK 僅私人發佈 |
 | 67 | [Browser (small app)](apps/browser-small-app-3.2.3/) | 3.2.3 authentic standalone v3c | 通過 | 通過 | 僅 Patchset |
 | 72（歷史版） | [Calculator](apps/calculator-2.1-update1/) | 2.1-update1 portable responsive v4 | 通過 | 通過 | 僅 Patchset |
 | 72 | [Calculator](apps/calculator-8.0.0/) | 8.0.0 portable repair v1 | 通過 | 通過 | 僅 Patchset |
