@@ -14,7 +14,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
 Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、Sony Browser、
 What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
-External monitor 與 Bluetooth Headset SBH56
+External monitor、Bluetooth Headset SBH56 與 5G Data Collector
 建立完整的公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
@@ -42,6 +42,7 @@ External monitor 與 Bluetooth Headset SBH56
 | 516 | [Sony Browser](apps/sony-browser-3.0.A.0.10/) | 3.0.A.0.10 v3.3.4 Taiwan localized | 通過 | 跳過：不宣稱跨品牌 | 僅證據；APK 僅私人發佈 |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |
 | 223 | [External monitor](apps/external-monitor-8.0.A.0.6/) | 8.0.A.0.6 unchanged original | 有限制通過：需 Root，UVC 硬體待測 | 失敗：API／ABI 不相容 | PARTIAL 僅證據；APK 僅私人發佈 |
+| supplemental 448 | [5G Data Collector](apps/5g-data-collector-1.0.9/) | 1.0.9 Android 13 unchanged original | 通過：通訊維持關閉 | 失敗：最低 API 33 | 僅證據；APK 僅私人發佈 |
 
 歷史版 `2.1-update1` 已完成獨立驗證並建立個別研究頁，但它與 8.0.0
 屬於同一 catalog row，因此不重複增加 840 筆目錄的完成數。
