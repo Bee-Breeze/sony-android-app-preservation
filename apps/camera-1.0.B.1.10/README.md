@@ -1,17 +1,12 @@
 # Sony Camera 1.0.B.1.10 保存研究
 
-> 本項保存研究、版本整理、修復實作、實機測試與文件由專案擁有者指導
-> OpenAI Codex 完成。這是獨立研究，與 Sony、HTC 或 APKMirror 無隸屬、
-> 贊助或背書關係。
+> 本項保存研究、版本整理、修復實作、實機測試與文件由專案擁有者指導，OpenAI Codex 完成。這是獨立研究，與 Sony、HTC 或 APKMirror 無隸屬、贊助或背書關係。
 
 ## 狀態
 
-Xperia Z3 Android 6.0.1 時期的 Camera `1.0.B.1.10` 已修復為可獨立安裝
-的相容版本，在 Sony Xperia 1 III Android 13 通過真正主頁、版面、拍照、
-錄影、前後鏡頭、觸控對焦、設定與生命週期測試。執行不需要 Root 或重開機。
+Xperia Z3 Android 6.0.1 時期的 Camera `1.0.B.1.10` 已修復為可在 Sony Xperia 1 III Android 13 普通安裝的相容版本。它可進入真正相機主畫面，使用前後鏡頭拍照與錄影，執行不需要 Root 或重新開機。
 
-HTC One M8 缺少 Sony 私有共享程式庫，無法安裝同一成品，因此本項只接受
-為 `Sony-only`，不宣稱跨品牌通用。
+HTC One M8 缺少 Sony 私有共享程式庫，無法安裝同一成品，因此本項結果為 `Sony-only`，不宣稱跨品牌通用。
 
 ## 身分
 
@@ -19,108 +14,86 @@ HTC One M8 缺少 Sony 私有共享程式庫，無法安裝同一成品，因此
 |---|---|
 | Z3 目錄索引 | `Z3M-A226` |
 | Package | `com.sonyericsson.android.camera` |
-| 版本 | `1.0.B.1.10` |
-| Version code | `2098186` |
+| 版本 | `1.0.B.1.10` (`2098186`) |
 | Sony 測試平台 | Xperia 1 III `XQ-BC72`，Android 13 |
 | HTC 測試平台 | One M8，Android 6.0.1 |
-| Root／Magisk | 不需要 |
+| Root／Magisk／重新開機 | 不需要 |
 
 ## 歷史
 
-此 Camera 來自 Xperia Z3 韌體，原本依賴同一套 Sony 系統框架，並不是為
-一般使用者獨立安裝而設計。
+此 Camera 來自 Xperia Z3 韌體，原本依賴同一套 Sony 系統框架，並不是為一般使用者獨立安裝而設計。
 
 ## 用途
 
-它保存 Xperia Z3 的拍照與錄影介面，包含手動拍照、場景、曝光與白平衡、
-閃光燈、觸控對焦、前後鏡頭及錄影。
+它保存該世代的手動拍照、場景、曝光、白平衡、閃光燈、觸控對焦、前後鏡頭與錄影介面。
 
 ## 版本選擇
 
-較新的 `2.9` 系列雖然版本號較高，但屬於不同 Xperia 相機世代與感光元件
-對應，無法代表 Xperia Z3 體驗，因此本項保留並修復 Z3 原版。
+APKMirror 上同 package 較新的 `2.9.2.A.0.10` 要求 Android 14 以上，且屬不同 Xperia 相機世代；本項目以保存 Z3 介面與 Xperia 1 III 相容為目的，因此選擇並修復 `1.0.B.1.10`。
 
 ## 修復內容
 
-- 補入獨立執行需要的 Z3 framework 與 Camera Add-on 類別。
-- 保護新手機不存在的選用 Sony 服務與原生延伸路徑。
-- 使用 Xperia 1 III 支援的 Camera1 預覽尺寸。
-- 調整舊版取景器與控制區域，使其適應 21:9 畫面。
+- 補入獨立執行所需的 Z3 framework／Camera Add-on 類別，並保護新手機不存在的選用 Sony 服務。
 - 將失效的 Sony 專用 MediaStore 查詢改為標準 Android 查詢。
-- 修復觸控對焦座標與可見對焦框，使左右點擊能落在不同位置。
-- 保留本機拍照與錄影，不依賴遠端服務。
+- 依 Xperia 1 III Camera1 能力選用前後鏡頭的相容預覽、拍照與錄影尺寸。
+- 後鏡頭拍照提升至 `4032 x 3024`（12 MP），前鏡頭提升至 `3264 x 2448`（8 MP）。
+- 後鏡頭錄影提升至 `3840 x 2160` HEVC，前鏡頭為 `1920 x 1080` H.264。
+- 修正 21:9 螢幕上的取景器置中與控制區域，並補回繁體中文 `12MP (4:3)` 標籤。
+- Xperia 1 III Camera1 HAL 無法可靠完成暫停後的錄影，因此隱藏不支援的暫停鍵，保留穩定的開始與停止錄影。
 
 修復版使用本地保存測試簽章，不能直接覆蓋 Sony 原始簽章版本。
 
-## 未恢復功能
+## 驗證結果
 
-- 沒有仿造 Xperia Z3 相機 HAL 的自動場景辨識能力。
-- 沒有替換 Xperia 1 III 的系統相機框架或 Photography Pro。
-- 沒有加入雲端服務、帳號繞過、付費功能或額外遙測。
+- 後鏡頭 JPEG：`4032 x 3024`。
+- 前鏡頭 JPEG：`3264 x 2448`。
+- 後鏡頭 MP4：HEVC Main、`3840 x 2160`、約 29.97 fps、AMR-WB 音訊。
+- 前鏡頭 MP4：H.264 High、`1920 x 1080`、約 29.97 fps、AMR-WB 音訊。
+- 12 個深度控制契約：11 個通過；1 個受舊版觸控層範圍限制。
+- HTC 普通安裝失敗：缺少 `com.sonyericsson.privateapis_1p`。
 
 ## 測試平台
 
 | 裝置 | 系統 | 結果 |
 |---|---|---|
-| Sony Xperia 1 III `XQ-BC72` | Android 13 / API 33 | Sony-only 技術驗收通過 |
-| HTC One M8 | Android 6.0.1 / API 23 | 同一 APK 安裝失敗，缺少 Sony 私有共享程式庫 |
-
-## 驗證結果
-
-- 冷啟動可進入真正即時相機主畫面。
-- 沒有 App 自身造成的黑邊、裁切、重疊或黑畫面。
-- 拍照產生有效 JPEG。
-- 錄影產生有效 H.264 影像與 AAC 聲音 MP4。
-- 前後鏡頭切換後都能恢復即時預覽。
-- 左右觸控對焦位置與對焦框確實不同。
-- 16 個控制項中 15 個通過、0 個失敗、1 個硬體能力受阻。
-- HTC 普通安裝失敗：缺少 `com.sonyericsson.privateapis_1p`。
+| Sony Xperia 1 III `XQ-BC72` | Android 13 / API 33 | `accepted_sony_only` |
+| HTC One M8 | Android 6.0.1 / API 23 | 同一 v47 APK 安裝失敗，缺少 Sony 私有共享程式庫 |
 
 ## 已知限制
 
-- Xperia 1 III HAL 回報 `sony-scene-detect-supported=false`，因此 Superior
-  Auto 介面可開啟，但 Xperia Z3 的自動場景辨識後端無法套用。
-- 舊 Camera1 預覽在室內低光源下不如 Photography Pro 流暢。
-- 實測只涵蓋上述 Sony 與 HTC，不推論所有 Xperia、Android 或 OEM。
-- 尚未進行完整 TalkBack 操作流程，不提出完整無障礙相容聲明。
+- 遠右側取景畫面的觸控對焦落在舊版觸控層之外；左側與中央觸控對焦可用。本輪沒有採用會破壞版面的高風險擴張修補。
+- 錄影暫停／繼續已停用；開始與停止錄影正常。
+- Xperia 1 III HAL 不提供 Z3 Superior Auto 所需的完整 Sony 場景偵測後端。
+- 相機固定橫向是原始設計；舊 Camera1 預覽在室內低光源下不如現代 Photography Pro 流暢。
+- 尚未完成完整 TalkBack 流程，不提出完整無障礙相容聲明。
+- 只驗證上述 Sony 與 HTC，不推論所有 Xperia、Android 或 OEM。
 
 ## 截圖
 
-公開副本只包含 Camera 介面與無法辨識環境的暗色測試畫面，已完成 OCR、
-原始像素、中繼資料與尾端資料檢查。
+公開副本只包含 Camera 介面與無法辨識環境的暗色取景背景，已完成原始像素、OCR、檔案中繼資料、尾端資料與關聯風險檢查。
 
-| Sony Xperia 1 III Android 13 橫向場景選擇 | Sony Xperia 1 III Android 13 橫向手動設定 |
+| 手動設定與 12MP 標籤 | 解析度選項 |
 |---|---|
-| ![Camera 場景選擇](screenshots/camera-scene-selection.png) | ![Camera 手動設定](screenshots/camera-manual-settings.png) |
+| ![Camera 手動設定](screenshots/camera-manual-settings.png) | ![Camera 解析度選項](screenshots/camera-resolution-options.png) |
 
 ## 檔案與完整性
 
 | 項目 | SHA-256 |
 |---|---|
-| 私人相容 APK | `70a58a67732224588aa2953cd2486c7894c122579e9d116a2abaec239ca08000` |
+| 私人 v47 相容 APK | `d27ea22353a8ea785e75a068fab91e96be927f9c33e1611bf4b70962b32b2e47` |
 | 本地測試簽章憑證 | `b5e26a13f091dd593e8f8024e7de21cc0426d0d383feae3300035b84def9d618` |
-| 場景選擇截圖 | `419cf0417938deff408ae79b888e57260c06e776c1f39a50d2a4ca680157fd2c` |
-| 手動設定截圖 | `02b9b5e07daa372701fb0081c1c91d62dfed1b87df5fee921cb3b753bb873603` |
+| 手動設定截圖 | `4f2ea674dd1ce92dd97756b63c937e8ede26523486b8c6b11edae075c6d81490` |
+| 解析度選項截圖 | `0de151f20ac4879e8ceadf8dab8952d5e793fda10e412ece8a613e1927541e16` |
 
-公開 repository 不包含 Sony 原始或重簽 APK。雜湊只用來辨認專案擁有者
-私人 App Store 與 NAS 保存的精確測試成品。
-
-保存研究所使用的重建流程為：合法持有的 Z3 原檔經固定工具版本解碼，
-套用文件記載的最小相容修改，再重建、對齊、本地簽章及核對 SHA-256。
-公開 evidence-only 紀錄不提供 Sony 程式碼或可直接重建 OEM APK 的補丁。
+公開 repository 不包含 Sony 原始 APK、重簽 APK、Sony 程式碼或可直接重建 OEM APK 的補丁。雜湊用來辨認專案擁有者私人 App Store 與 NAS 保存的精確測試成品。
 
 ## 安裝與回溯
 
-私人相容 APK 使用一般 Android Package Manager 安裝，不需要 Root 或重開機。
-由於簽章與 Sony 原版不同，若已有同 package 原版，必須先備份資料並解除
-安裝衝突版本。回溯時解除安裝相容版，再安裝合法保存且簽章相符的原版；
-解除安裝會移除 App 本機資料。
+私人相容 APK 使用一般 Android Package Manager 安裝。由於簽章與 Sony 原版不同，若已有同 package 原版，必須先備份資料並解除安裝衝突版本。回溯時解除安裝相容版，再安裝合法保存且簽章相符的原版；解除安裝會移除 App 本機資料。
 
 ## 發布與法律聲明
 
-公開模式為 `evidence_only`：只發布本專案撰寫的文件、測試結果、雜湊及
-去識別化截圖。Sony、Xperia、App 名稱、程式、介面、圖示、商標與其他
-資產仍屬原權利人。
+公開模式為 `evidence_only`：只發布本專案撰寫的文件、測試結果、雜湊及去識別化截圖。Sony、Xperia、App 名稱、程式、介面、圖示、商標與其他資產仍屬原權利人。
 
 ## 研究與作者分工
 
