@@ -11,7 +11,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 
 ## 狀態
 
-目前先以 1930's、2D Code Scanner、Browser (small app)、Calculator、
+目前先以 1930's、2D Code Scanner、Blacklist、Browser (small app)、Calculator、
 Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、Sony Browser、
 What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
 External monitor、Bluetooth Headset SBH56 與 5G Data Collector
@@ -22,6 +22,7 @@ External monitor、Bluetooth Headset SBH56 與 5G Data Collector
 | --- | --- | --- | --- | --- | --- |
 | 0 | [1930's](apps/1930s-1.0.1/) | 1.0.1 portable v1 + host max-aspect v3 | 通過 | 失敗：缺少 host | 僅 Patchset |
 | 1 | [2D Code Scanner](apps/2d-code-scanner-1.0.2.A.0.1/) | 1.0.2.A.0.1 portable v2 | 通過 | 失敗：32-bit ABI | 僅 Patchset |
+| 56 | [Blacklist](apps/blacklist-7.1.A.0.8/) | 7.1.A.0.8 compatibility v3 | 有限制通過：核心通訊攔截未驗證 | 通過：主頁、分頁及直橫屏 | PARTIAL 僅證據；APK 僅私人發佈 |
 | 63 | [Bluetooth Headset SBH56](apps/bluetooth-headset-sbh56-1.0.A.0.6/) | 1.0.A.0.6 unchanged original | 有限制通過：實體耳機功能待測 | 跳過：僅保留歷史參考 | PARTIAL 僅證據；APK 僅私人發佈 |
 | 67 | [Browser (small app)](apps/browser-small-app-3.2.3/) | 3.2.3 authentic standalone v3c | 通過 | 通過 | 僅 Patchset |
 | 72（歷史版） | [Calculator](apps/calculator-2.1-update1/) | 2.1-update1 portable responsive v4 | 通過 | 通過 | 僅 Patchset |
