@@ -12,7 +12,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 ## 狀態
 
 目前先以 1930's、2D Code Scanner、Blacklist、Browser (small app)、Calculator、
-Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、Sketch、Sony Browser、
+Calendar、Camera、Contacts、Email、Lifelog、Movie Creator、PlayJ、Sketch、Sony Browser、
 What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
 External monitor、Bluetooth Headset SBH56 與 5G Data Collector
 建立完整的公開範本。
@@ -29,6 +29,7 @@ External monitor、Bluetooth Headset SBH56 與 5G Data Collector
 | 72 | [Calculator](apps/calculator-8.0.0/) | 8.0.0 portable repair v1 | 通過 | 通過 | 僅 Patchset |
 | 74 | [Calendar](apps/calendar-20.0.A.4.22/) | 20.0.A.4.22 portable repair v3 | 通過 | 有限制通過 | 僅 Patchset |
 | 169 | [Contacts](apps/contacts-2.3.3/) | 2.3.3 compat v20 | 通過 | 通過 | 僅補丁規格 |
+| 407 | [PlayJ](apps/playj-1.1.A.0.7/) | 1.1.A.0.7 repaired v4 | 通過：終止服務頁與 READ MORE | 通過：終止服務頁與原始 URL | 僅證據；APK 僅私人發佈 |
 | Z3M-A084 | [Email](apps/email-17.0.A.0.12/) | 17.0.A.0.12 practical repair v1 | 通過 | 失敗：最低 API 30 | 僅 Patchset |
 | Z3M-A053 | [Lifelog](apps/lifelog-4.0.A.0.39/) | 4.0.A.0.39 unchanged original | 通過 | 通過 | 僅證據 |
 | Z3M-A094 | [Movie Creator](apps/movie-creator-5.8.A.0.1/) | 5.8.A.0.1 unchanged original | 通過 | 失敗：缺少 `com.sony.device` | 僅證據 |
