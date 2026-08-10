@@ -14,7 +14,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 目前先以 1930's、2D Code Scanner、Blacklist、Browser (small app)、Calculator、
 Calendar、Camera、Concept Installer、Contacts、Email、Lifelog、Movie Creator、Network Visualizer、PlayJ、Sketch、Sony Browser、
 What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
-External monitor、Bluetooth Headset SBH56、5G Data Collector、Sony Power Optimizer 與 Xperia Assist
+External monitor、Bluetooth Headset SBH56、5G Data Collector、Family Board、Sony Power Optimizer 與 Xperia Assist
 建立完整的公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
@@ -44,6 +44,7 @@ External monitor、Bluetooth Headset SBH56、5G Data Collector、Sony Power Opti
 | Z3M-A286 | [What's New](apps/whats-new-5.0.A.0.0/) | 5.0.A.0.0 community reconstruction v2 | 通過 | 通過 | 僅證據；APK 僅私人發佈 |
 | 516 | [Sony Browser](apps/sony-browser-3.0.A.0.10/) | 3.0.A.0.10 v3.3.4 Taiwan localized | 通過 | 跳過：不宣稱跨品牌 | 僅證據；APK 僅私人發佈 |
 | 518 | [Sony Calculator](apps/sony-calculator-1.0.B.1.0/) | 1.0.B.1.0 unchanged original | 通過 | 通過 | 僅證據 |
+| 533 | [Family Board](apps/family-board-2.0.A.0.4/) | 2.0.A.0.4 responsive v4 | 通過：看板、便條、影片與本機備份還原 | 不要求：本輪以 Xperia 1 III 本機可用為目標 | 僅證據；APK 僅私人發佈 |
 | 223 | [External monitor](apps/external-monitor-8.0.A.0.6/) | 8.0.A.0.6 unchanged original | 有限制通過：需 Root，UVC 硬體待測 | 失敗：API／ABI 不相容 | PARTIAL 僅證據；APK 僅私人發佈 |
 | 364 | [Network Visualizer](apps/network-visualizer-2.0.0/) | 2.0.0 compat v5 | 有限制通過：介面、版面、PiP 與有限控制通過；即時 mmWDI 資料不可用 | 失敗：最低 API 33 | PARTIAL 僅證據；APK 僅私人發佈 |
 | supplemental 448 | [5G Data Collector](apps/5g-data-collector-1.0.9/) | 1.0.9 Android 13 unchanged original | 通過：通訊維持關閉 | 失敗：最低 API 33 | 僅證據；APK 僅私人發佈 |
