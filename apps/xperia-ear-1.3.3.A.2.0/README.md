@@ -52,7 +52,7 @@ Xperia Ear 是 Sony 的單耳智慧藍牙裝置。Sony 後續公告 App 下載�
 
 來源：
 
-- [APKMirror Xperia Ear 1.3.3.A.2.0](https://www.apkmirror.com/apk/sony-mobile-communications/xperia-ear/xperia-ear-1-3-0-a-2-0-release/)
+- [APKMirror Xperia Ear 1.3.3.A.2.0](https://www.apkmirror.com/apk/sony-mobile-communications/xperia-ear/xperia-ear-1-3-3-a-2-0-release/)
 - [Sony Xperia Ear 支援頁](https://www.sony.com/electronics/support/other-products-xperia-smart-devices/xperia-ear)
 
 ## 修復內容
@@ -169,4 +169,4 @@ Android 12 以上需在系統設定允許「附近裝置」。若裝置仍阻擋
 - [Sony：Xperia Ear 服務終止通知](https://www.sony.com/electronics/support/articles/00280982)
 - [Sony：XEA10 Host Application 下載說明](https://www.sony.com/electronics/support/articles/00281170)
 - [Sony：Xperia Ear 支援頁](https://www.sony.com/electronics/support/other-products-xperia-smart-devices/xperia-ear)
-- [APKMirror：Xperia Ear 1.3.3.A.2.0](https://www.apkmirror.com/apk/sony-mobile-communications/xperia-ear/xperia-ear-1-3-0-a-2-0-release/)
+- [APKMirror：Xperia Ear 1.3.3.A.2.0](https://www.apkmirror.com/apk/sony-mobile-communications/xperia-ear/xperia-ear-1-3-3-a-2-0-release/)
