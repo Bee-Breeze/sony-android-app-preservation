@@ -14,7 +14,7 @@ apps」合併去重後的 840 筆全域目錄為準；成功、失敗、僅 Sony
 目前先以 1930's、2D Code Scanner、Blacklist、Browser (small app)、Calculator、
 Calendar、Camera、Concept Installer、Contacts、Email、Lifelog、Movie Creator、Network Visualizer、PlayJ、Sketch、Sony Browser、
 What's New、Xperia Lounge、Xperia Weather、Sony Calculator、Clock、Xperia Calendar、Album、
-External monitor、Bluetooth Headset SBH56、5G Data Collector、Family Board、Sony Power Optimizer 與 Xperia Assist
+External monitor、Bluetooth Headset SBH56、5G Data Collector、Family Board、Sony Power Optimizer、Xperia Assist 與 Xperia Ear
 建立完整的公開範本。
 840 筆總目錄尚未全部完成，因此本 repository 不宣稱整體專案已完成。
 
@@ -50,6 +50,7 @@ External monitor、Bluetooth Headset SBH56、5G Data Collector、Family Board、
 | supplemental 448 | [5G Data Collector](apps/5g-data-collector-1.0.9/) | 1.0.9 Android 13 unchanged original | 通過：通訊維持關閉 | 失敗：最低 API 33 | 僅證據；APK 僅私人發佈 |
 | 556 | [Sony Power Optimizer](apps/sony-power-optimizer-13.0.A.1.6/) | 13.0.A.1.6 unchanged original | 通過：安全控制與單一 App 清理 | 失敗：缺少 Sony CTA 服務 | 僅證據；APK 僅私人發佈 |
 | 708 | [Xperia Assist](apps/xperia-assist-2.3.A.0.13/) | 2.3.A.0.13 coexist v2 | 通過：主頁與 35 控制閉合 | 失敗：最低 API 28 | 僅證據；APK 僅私人發佈 |
+| 771 | [Xperia Ear](apps/xperia-ear-1.3.3.A.2.0/) | 1.3.3.A.2.0 unchanged original | 有限制通過：無實體 XEA10、服務已退役 | 失敗：Sony Agent 服務 ANR | PARTIAL 僅證據；APK 僅私人發佈 |
 
 歷史版 `2.1-update1` 已完成獨立驗證並建立個別研究頁，但它與 8.0.0
 屬於同一 catalog row，因此不重複增加 840 筆目錄的完成數。
